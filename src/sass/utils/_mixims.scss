@@ -1,10 +1,6 @@
 $fontDM: 'DM Sans', sans-serif;
 $fontTitan: 'Titan One', cursive;
 
-// .text {
-//   font-style: $fontTitan;
-//   @include fontStyle(400, 26, 34, 3);
-// }
 @mixin fontStyle($fontWeight, $fontSize, $liHeig, $letSpac) {
   font-weight: $fontWeight;
   font-size: (#{$fontSize * 1px});
