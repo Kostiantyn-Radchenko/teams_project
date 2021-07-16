@@ -1,0 +1,15 @@
+.about__preTitle {
+  @include fontStyle(400, 18, 21);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.about__title {
+  @include fontStyle(400, 34, 39, 4);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.about__text {
+  @include fontStyle(500, 12, 19.44);
+}
