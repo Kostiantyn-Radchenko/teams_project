@@ -3,34 +3,8 @@
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-
-  @media screen and (min-width: 320px) {
-    max-width: 320px;
-  }
-  @media screen and (min-width: 480px) {
-    max-width: 480px;
-  }
-  @media screen and (min-width: 768px) {
-    max-width: 768px;
-  }
-  @media screen and (min-width: 1200px) {
-    max-width: 1200px;
-  }
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
 .section-reviews__img {
   display: block;
   /* width: 100%; */

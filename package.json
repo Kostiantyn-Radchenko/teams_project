@@ -6,9 +6,8 @@
   "homepage": "https:///Kostiantyn-Radchenko.github.io/teams_projecte/",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /images/",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "build": "parcel build src/*.html --public-url /teams_project/"
+    
   },
   "repository": {
     "type": "git",
@@ -16,7 +15,7 @@
   },
   "keywords": [],
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
-  "license": "ISC", 
+  "license": "ISC",
   "devDependencies": {
     "parcel-bundler": "^1.12.5",
     "parcel-plugin-handlebars-precompile": "^1.0.2",
@@ -24,7 +23,5 @@
     "posthtml-include": "^1.6.2",
     "sass": "^1.32.8"
   },
-  "dependencies": {
-    "gh-pages": "^3.2.3"
-  }
+  "dependencies": {}
 }

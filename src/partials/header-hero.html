@@ -1,88 +1,95 @@
 <header class="header">
-    <div class="header__container container">
-        <a href="#" class="header__logo">
-            <img srcset="./images/logo@1x.jpg 1x, ./images/logo@2x.jpg 2x" src="./images/logo@1x.jpg" alt="">
-        </a>
-        <nav class="nav">
-            <ul class="nav_list">
-                <li class="nav__item">
-                    <a href="./index.html" class="nav__link">Home</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#hero" class="nav__link">About us</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#about" class="nav__link">How it’s made?</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#products" class="nav__link">Our products</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#contacts" class="nav__link">Contact</a>
-                </li>
-            </ul>
-        </nav>
-        <button class="menu-open" type="button">
-            <svg class="menu-icon" width="20" height="12">
-                <use href="./images/sprite.svg#icon-burger"></use>
-            </svg>
+  <div class="header__container container">
+    <a href="#" class="header__logo">
+      <img
+        srcset="images/logo@1x.jpg 1x, images/logo@2x.jpg 2x"
+        src="./images/logo@1x.jpg"
+        alt=""
+      />
+    </a>
+    <nav class="nav">
+      <ul class="nav_list">
+        <li class="nav__item">
+          <a href="./index.html" class="nav__link">Home</a>
+        </li>
+        <li class="nav__item">
+          <a href="#hero" class="nav__link">About us</a>
+        </li>
+        <li class="nav__item">
+          <a href="#about" class="nav__link">How it’s made?</a>
+        </li>
+        <li class="nav__item">
+          <a href="#products" class="nav__link">Our products</a>
+        </li>
+        <li class="nav__item">
+          <a href="#contacts" class="nav__link">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <button class="menu-open" type="button">
+      <svg class="menu-icon" width="20" height="12">
+        <use href="images/sprite.svg#icon-burger"></use>
+      </svg>
+    </button>
+    <button class="header__button button" type="button">
+      Buy now
+      <svg width="4" height="8" class="header__button-icon">
+        <use href="images/sprite.svg#button-arrow"></use>
+      </svg>
+    </button>
+    <div class="mob-menu">
+      <div class="container mob-menu__container">
+        <button type="button" class="mob-menu__close">
+          <svg width="14" height="14" class="menu-icon">
+            <use href="images/sprite.svg#icon-close"></use>
+          </svg>
         </button>
-        <button class="header__button button" type="button">Buy now
-            <svg width="4" height="8" class="header__button-icon">
-                <use href="./images/sprite.svg#button-arrow"></use>
-            </svg>
+        <button class="mob-menu__button button" type="button">
+          Buy now
+          <svg width="4" height="8" class="mob-menu__button-icon">
+            <use href="images/sprite.svg#button-arrow"></use>
+          </svg>
         </button>
-        <div class="mob-menu">
-            <div class="container mob-menu__container">
-                <button type="button" class="mob-menu__close">
-                    <svg width="14" height="14" class="menu-icon">
-                        <use href="./images/sprite.svg#icon-close"></use>
-                    </svg>
-                </button>
-                <button class="mob-menu__button button" type="button">Buy now
-                    <svg width="4" height="8" class="mob-menu__button-icon">
-                        <use href="./images/sprite.svg#button-arrow"></use>
-                    </svg>
-                </button>
-                <ul class="mob-menu__nav-list">
-                    <li class="mob-menu__nav-item">
-                        <a href="" class="mob-menu__nav-link">Home</a>
-                    </li>
-                    <li class="mob-menu__nav-item">
-                        <a href="" class="mob-menu__nav-link">About us</a>
-                    </li>
-                    <li class="mob-menu__nav-item">
-                        <a href="" class="mob-menu__nav-link">How it’s made?</a>
-                    </li>
-                    <li class="mob-menu__nav-item">
-                        <a href="" class="mob-menu__nav-link">Our products</a>
-                    </li>
-                    <li class="mob-menu__nav-item">
-                        <a href="" class="mob-menu__nav-link">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+        <ul class="mob-menu__nav-list">
+          <li class="mob-menu__nav-item">
+            <a href="" class="mob-menu__nav-link">Home</a>
+          </li>
+          <li class="mob-menu__nav-item">
+            <a href="" class="mob-menu__nav-link">About us</a>
+          </li>
+          <li class="mob-menu__nav-item">
+            <a href="" class="mob-menu__nav-link">How it’s made?</a>
+          </li>
+          <li class="mob-menu__nav-item">
+            <a href="" class="mob-menu__nav-link">Our products</a>
+          </li>
+          <li class="mob-menu__nav-item">
+            <a href="" class="mob-menu__nav-link">Contact</a>
+          </li>
+        </ul>
+      </div>
     </div>
-    <section id="hero" class="hero">
-        <div class="hero__container container">
-            <h1 class="hero__title">ice cream made with <span class="hero__title-span">passion</span></h1>
-            <ul class="hero__button-list">
-                <li class="hero__button-item">
-                    <a href="" class="hero__button-link button">Products</a>
-                </li>
-                <li class="hero__button-item">
-                    <a href="" class="hero__button-link button">How it’s made?</a>
-                </li>
-            </ul>
-            <p class="hero-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et
-            </p>
-            <button type="button" class="hero__arrow-button arrow-button"></button>
-            <ul class="hero__chain-list">
-                <li class="hero__chain-item"><span class="hero__chain-span">16</span>cafes</li>
-                <li class="hero__chain-item"><span class="hero__chain-span">23</span>food trucks</li>
-            </ul>
-        </div>
-    </section>
+  </div>
+  <section id="hero" class="hero">
+    <div class="hero__container container">
+      <h1 class="hero__title">ice cream made with <span class="hero__title-span">passion</span></h1>
+      <ul class="hero__button-list">
+        <li class="hero__button-item">
+          <a href="" class="hero__button-link button">Products</a>
+        </li>
+        <li class="hero__button-item">
+          <a href="" class="hero__button-link button">How it’s made?</a>
+        </li>
+      </ul>
+      <p class="hero-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        labore et
+      </p>
+      <button type="button" class="hero__arrow-button arrow-button"></button>
+      <ul class="hero__chain-list">
+        <li class="hero__chain-item"><span class="hero__chain-span">16</span>cafes</li>
+        <li class="hero__chain-item"><span class="hero__chain-span">23</span>food trucks</li>
+      </ul>
+    </div>
+  </section>
 </header>
