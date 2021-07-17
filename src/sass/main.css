@@ -3,6 +3,19 @@
  * Главный файл стилей.
  * Все паршалы подключаются сюда.
  */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -35,6 +48,7 @@ svg,
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 input {
@@ -93,13 +107,41 @@ ul {
 }
 
 .section-reviews {
-  padding-top: 80px;
-  padding-bottom: 86px;
-  margin: 0;
+  padding: 80px 15px 86px 15px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
-img {
+.section-reviews__img {
   display: block;
-  width: 100%;
+  /* width: 100%; */
+  width: 85px;
+  height: 85px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-reviews__text {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 216%;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #000000;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.reviews-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contacts {
+  background-color: #fff5f6;
+  color: black;
 }
 /*# sourceMappingURL=main.css.map */
