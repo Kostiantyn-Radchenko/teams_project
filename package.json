@@ -6,7 +6,7 @@
   "homepage": "https:///Kostiantyn-Radchenko.github.io/teams_projecte/",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /teams_project/src/images/"
+    "build": "parcel build src/*.html --public-url /teams_project/"
     
   },
   "repository": {
