@@ -3,4 +3,103 @@
  * Главный файл стилей.
  * Все паршалы подключаются сюда.
  */
+* {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  padding: 0;
+}
+
+svg,
+img {
+  display: block;
+  max-width: 100%;
+}
+
+input {
+  cursor: pointer;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.about__preTitle {
+  font-family: "Titan One", cursive;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.145;
+  letter-spacing: 0.02em;
+  color: #ffa5ba;
+  text-align: center;
+}
+
+.about__title {
+  font-family: "Titan One", cursive;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1.145;
+  letter-spacing: 0.04em;
+  color: #d41443;
+  text-align: center;
+}
+
+.about__text {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.62;
+  letter-spacing: 0.02em;
+  color: #000000;
+}
+
+.about__text--color {
+  color: #907e82;
+}
+
+.about__btn {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.30214;
+  letter-spacing: 0.02em;
+  color: #d41443;
+}
+
+.section-reviews {
+  padding-top: 80px;
+  padding-bottom: 86px;
+  margin: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
 /*# sourceMappingURL=main.css.map */

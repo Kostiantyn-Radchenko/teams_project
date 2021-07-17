@@ -1,27 +1,27 @@
 .about__preTitle {
-    @include fontTitan;
-    @include fontStyle(400, 18, 20.61,2);
-    color: $pre-title-color;
-    text-align: center;
+  font-family: $fontTitan;
+  @include fontStyle(400, 18, 20.61, 2);
+  color: $pre-title-color;
+  text-align: center;
 }
-.about__title{
-    @include fontTitan;
-    @include fontStyle(400, 34, 38.93,4);
-    color: $accent-color;
-    text-align: center;
+.about__title {
+  font-family: $fontTitan;
+  @include fontStyle(400, 34, 38.93, 4);
+  color: $accent-color;
+  text-align: center;
 }
 
 .about__text {
-    @include fontDM;
-    @include fontStyle(500, 12, 19.44,2);
-    color: $main-text-color;
+  font-family: $fontDM;
+  @include fontStyle(500, 12, 19.44, 2);
+  color: $main-text-color;
 }
 .about__text--color {
-    color: $light-text-color;
+  color: $light-text-color;
 }
 
 .about__btn {
-    @include fontDM;
-    @include fontStyle(700, 14, 18.23,2);
-    color: $accent-color;
+  font-family: $fontDM;
+  @include fontStyle(700, 14, 18.23, 2);
+  color: $accent-color;
 }
