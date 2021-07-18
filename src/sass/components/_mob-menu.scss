@@ -1,0 +1,83 @@
+.menu-open {
+  outline: 1px solid black;
+  display: inline-flex;
+  align-items: center;
+  margin-left: auto;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  color: $accent-color;
+}
+
+.menu-icon {
+  fill: currentColor;
+}
+
+.mob-menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  max-width: 250px;
+  width: 100%;
+  background-color: $menu-bg-color;
+  z-index: 3;
+  overflow: auto;
+  // overflow-y: hidden;
+  opacity: 1;
+  transform: translateX(0);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mob-menu.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateX(-100%);
+}
+
+.mob-menu__container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.mob-menu__close {
+  outline: 1px solid black;
+  position: absolute;
+  top: 23px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  color: $accent-color;
+}
+
+.mob-menu__button {
+  @include fontStyle(700, 16, 21, 4);
+  margin-bottom: 32px;
+  padding: 13px 48px;
+  border-radius: 22px;
+  background-color: $main-color;
+  color: $accent-color;
+}
+
+.mob-menu__button-icon {
+  margin-left: 28px;
+  fill: currentColor;
+}
+
+.mob-menu__nav-item {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.mob-menu__nav-link {
+  font-family: $fontDM;
+  @include fontStyle(700, 14, 18, 4);
+  color: $main-color;
+  &--current {
+    color: $accent-color;
+  }
+}
