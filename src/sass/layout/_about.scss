@@ -11,6 +11,21 @@
   }
 }
 
+<<<<<<< Updated upstream
+=======
+.about__container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 50px;
+  padding-right: 50px;
+  @media screen and(min-width:480px) {
+    max-width: 480px;
+  }
+}
+
+
+>>>>>>> Stashed changes
 .about__preTitle {
   font-family: $fontTitan;
   @include fontStyle(400, 18, 20.61, 2);
