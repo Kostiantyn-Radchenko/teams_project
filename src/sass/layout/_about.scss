@@ -2,16 +2,17 @@
 .about__section{
   padding-top: 125px;
   padding-bottom: 39px;
-  background-color: $light-bg-color;
+  @media screen and(min-width:768px) {
+    padding-top: 130px;
+    padding-bottom: 66px;
+  }
+  @media screen and(min-width:1200px) {
+    padding-top: 125px;
+    padding-bottom: 39px;
+  }
 }
 
-.about__container {
-  width: 100%;
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 50px;
-  padding-right: 50px;
-}
+
 
 
 .about__preTitle {
@@ -22,6 +23,13 @@
   text-transform: uppercase;
 
   margin-bottom: 15px;
+
+  @media screen and(min-width:768px) {
+    @include fontStyle(400, 26, 29.77, 2);
+  }
+  @media screen and(min-width:1200px) {
+    @include fontStyle(400, 30, 34.35, 4);
+  }
 }
 .about__title {
   font-family: $fontTitan;
@@ -31,12 +39,25 @@
   text-transform: uppercase;
 
   margin-bottom: 26px;
+  @media screen and(min-width:768px) {
+    @include fontStyle(400, 48, 54.96, 4);
+  }
+  @media screen and(min-width:1200px) {
+    @include fontStyle(400, 58, 66.41, 6);
+  }
 }
 
 .about__img {
   width: 100%;
   height: auto;
   margin-bottom: 46px;
+  @media screen and(min-width:768px) {
+    width: 340px;
+    margin-bottom: 0;
+    }
+  @media screen and(min-width:1200px) {
+    width: 516px;
+  }
 }
 
 .about__text {
@@ -44,12 +65,17 @@
   @include fontStyle(500, 12, 19.44, 2);
   color: $main-text-color;
   margin-bottom: 47px;
-
-  // background-image: url(images/about-bg-milk-480@1x.png);
+  @media screen and(min-width:768px) {
+    @include fontStyle(500, 14, 24.64, 2);
+    }
+  @media screen and(min-width:1200px) {
+    @include fontStyle(500, 16, 28.16, 4);
+      }
 }
 .about__text--color {
   color: $light-text-color;
   margin-bottom: 10px;
+  
 }
 
 .about__text--margin{
@@ -72,9 +98,35 @@
   margin-right: 13px;
   padding-top: 12px;
   padding-bottom: 10px;
+
+  @media screen and(min-width:768px) {
+    @include fontStyle(700, 16, 20.83, 2);
+    }
+  @media screen and(min-width:1200px) {
+    @include fontStyle(700, 16, 20.83, 2);
+      }
 }
 
 .about__btnIcon {
 fill: currentColor;
 }
 
+.about__flexContainer {
+  @media screen and(min-width:768px) {
+    display: flex;
+    justify-content: center;
+    }
+}
+
+.about__textContainer {
+  @media screen and(min-width:768px) {
+    width: 340px;
+    margin-left: 17px;
+    margin-top: 50px;
+    }
+  @media screen and(min-width:1200px) {
+    width: 463px;
+    margin-left: 74px;
+    margin-top: 55px;
+      }
+}
