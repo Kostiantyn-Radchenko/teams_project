@@ -1,9 +1,10 @@
 <!-- about -->
-<section id="about" class="about about__section">
-    <div class="about__container">
+<section id="about" class="about  about__container">
+    <div class="about__section">
   <p class="about__preTitle">tradition and love</p>
   <h2 class="about__title">how it’s made?</h2>
-  <picture>
+  <div class="about__flexContainer">
+    <picture>
     <source
       srcset="images/about-cow-1200@1x.png 1x, images/about-cow-1200@2x.png 2x"
       media="(min-width:1200px)"
@@ -17,21 +18,24 @@
       media="(min-width:480px)"
     />
     <img class="about__img" src="images/about-cow-480@1x.png" alt="Cow" width="100%" />
-  </picture>
-  <p class="about__text">
-    Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem
-    eget, egestas eros. Maecenas eleifend erat at justo fringilla.
-  </p>
-  <p class="about__text about__text--color">
-    Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci in
-    imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus.
-    Cras massa nibh, tincidunt.</p>
-     <p class="about__text about__text--margin">Aliquam erat volutpat. Aenean accumsan.</p> 
+    </picture>
+    <div class="about__textContainer">
+      <p class="about__text">
+        Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem
+        eget, egestas eros. Maecenas eleifend erat at justo fringilla.
+      </p>
+      <p class="about__text about__text--color">
+        Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci in
+        imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus.
+        Cras massa nibh, tincidunt.</p>
+      <p class="about__text about__text--margin">Aliquam erat volutpat. Aenean accumsan.</p> 
   
-  <button class="about__btn" type="button">Read more
-    <svg class="about__btnIcon" width="20" height="12">
-        <use href="images/sprite.svg#button-arrow"></use>
-    </svg> 
-  </button>
+      <button class="about__btn" type="button">Read more
+        <svg class="about__btnIcon" width="20" height="12">
+            <use href="images/sprite.svg#button-arrow"></use>
+        </svg> 
+      </button>
+    </div>
+</div>
 </div>
 </section>
