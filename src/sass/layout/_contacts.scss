@@ -99,8 +99,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 161px;
-  height: 44px;
+  padding: 12px 15px;
   font-weight: bold;
   font-size: 16px;
   line-height: 1.312;
@@ -116,11 +115,12 @@
 .card-button__icon {
   margin-left: 8px;
   width: 20px;
-  height: 12px;
+  height: 10px;
   fill: currentColor;
 }
 
 .card-button__button--color {
+  padding: 12px 32px;
   background-color: $main-color;
   color: $slider-accent-color;
   &:hover,
