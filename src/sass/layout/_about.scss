@@ -11,21 +11,7 @@
   }
 }
 
-<<<<<<< Updated upstream
-=======
-.about__container {
-  width: 100%;
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 50px;
-  padding-right: 50px;
-  @media screen and(min-width:480px) {
-    max-width: 480px;
-  }
-}
 
-
->>>>>>> Stashed changes
 .about__preTitle {
   font-family: $fontTitan;
   @include fontStyle(400, 18, 20.61, 2);
@@ -110,6 +96,10 @@
   padding-top: 12px;
   padding-bottom: 10px;
 
+  &:focus,&:hover {
+    background-color: $button-hover-color ;
+  }
+
   @media screen and(min-width:768px) {
     @include fontStyle(700, 16, 20.83, 2);
   }
@@ -157,11 +147,6 @@
     background-image: url(/images/about-bg-milk-480@2x.png);
   }
 
-  // @media screen and (min-width:480px ) {
-
-  //    max-width: 480px;
-
-  // }
 
   @media screen and (min-width: 768px) {
     background-image: none;
