@@ -1,0 +1,23 @@
+.header {
+  position: relative;
+  background-color: $hero-bg-color;
+}
+
+.header__container {
+  position: fixed;
+  width: 100%;
+  top: 6px;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  background-color: $hero-bg-color;
+}
+
+.nav {
+  display: none;
+}
+
+.header__button {
+  display: none;
+}

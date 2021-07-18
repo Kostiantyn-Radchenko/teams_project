@@ -1,0 +1,10 @@
+// Galiovets
+.button {
+  font-family: inherit;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  border-radius: 20px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

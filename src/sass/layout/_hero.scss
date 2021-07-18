@@ -1,0 +1,63 @@
+
+
+.hero__container {
+  padding-top: 193px;
+  padding-bottom: 160px;
+}
+
+.hero__title {
+  font-family: $fontTitan;
+  @include fontStyle(400, 26, 30, 4);
+  text-transform: uppercase;
+  margin-bottom: 19px;
+  max-width: 218px;
+  color: $main-color;
+}
+
+.hero__title-span {
+  font-family: $fontTitan;
+  @include fontStyle(400, 26, 30, 4);
+  text-transform: uppercase;
+  color: $accent-color;
+}
+
+.hero__button-list {
+  display: flex;
+}
+
+.hero__button-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.hero__button-link {
+  padding: 9px 14px;
+  @include fontStyle(400, 8, 10, 4);
+  &--pink {
+    color: $main-color;
+    background-color: $accent-color;
+    &:hover,
+    &:focus {
+      background-color: $review-dots-color;
+    }
+  }
+  &--white {
+    color: $accent-color;
+    background-color: $main-color;
+    &:hover,
+    &:focus {
+      background-color: $button-hover-color;
+    }
+  }
+}
+
+.hero-text {
+  display: none;
+}
+
+.hero__chain-list {
+  display: none;
+}
+
+.hero__arrow-button {
+  display: none;
+}
