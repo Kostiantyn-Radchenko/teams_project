@@ -6,12 +6,15 @@
 .header__container {
   position: fixed;
   width: 100%;
-  top: 6px;
+  top: 0;
   left: 0;
-  z-index: 2;
+  z-index: 5;
   display: flex;
   align-items: center;
+  padding-top: 6px;
+  padding-bottom: 6px;
   background-color: $hero-bg-color;
+  overflow-y: hidden;
 }
 
 .nav {

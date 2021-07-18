@@ -13,30 +13,39 @@
       />
       <source
         srcset="images/reviews-girl1@1x.jpg 1x, images/reviews-girl1@2x.jpg 2x"
-        media="(min-width: 480px)"
+        media="(min-width: 320px)"
       />
     </picture>
+    <div class="reviews-product">
+      <p class="reviews-product__text">
+        Nullam viverra consectetuer.Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit
+        nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
+      </p>
+    </div>
 
-    <p class="section-reviews__text">
-      Nullam viverra consectetuer.Quisque cursus et, porttitor risus.
-    </p>
-    <p class="section-reviews__text">Aliquam sem. In hendrerit nulla quam nunc, accumsan congue.</p>
-    <p class="section-reviews__text">Lorem ipsum primis in nibh vel risus.</p>
     <!-- Через список стилизовать СВГ в цвет при ховере на Ссылки
                 <ul> 
                 <li></li>
                 <li></li>
                 <li></li>
             </ul> -->
-    <svg>
-      <use href=""></use>
+
+    <svg class="reviesw-icon">
+      <use href="images/sprite.svg#icon-three-dots"></use>
     </svg>
-    <h3>Emily, Los Angeles</h3>
+    <h3 class="reviews-title">Emily, Los Angeles</h3>
+    <div>
+      <svg class="reviews-icon">
+        <use href="images/sprite.svg/#icon-three-dots"></use>
+      </svg>
+    </div>
+    <h3>Emily, Los Angeles.</h3>
+
     <ul class="reviews-nav">
       <li class="reviews-nav__item">
-        <a class="reviews-nav__link" href="">
+        <a class="reviews-nav__link" href="//">
           <svg class="reviews-nav__icon">
-            <use href=""></use></svg
+            <use href="images/sprite.svg#icon-home"></use></svg
         ></a>
       </li>
 

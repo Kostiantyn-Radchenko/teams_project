@@ -10,7 +10,7 @@ $fontTitan: 'Titan One', cursive;
 
 // break point
 @mixin forSize($range) {
-  $mobile: 320px;
+  $mobile: 480px;
   $tablets: 768px;
   $desktop: 1200px;
 

@@ -1,5 +1,6 @@
 .section-reviews {
-  padding: 80px 15px 86px 15px;
+  width: 320px;
+  padding: 80px 20px 86px 20px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -13,19 +14,60 @@
   margin-left: auto;
   margin-right: auto;
 }
-.section-reviews__text {
-  font-family: DM Sans;
+.reviews-product {
+  position: relative;
+  margin-top: 29px;
+}
+.reviews-product::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 28px;
+  background-image: url('/images/icon/quotes.svg');
+  background-image: url('/images/sprite.svg#quotes');
+
+  background-repeat: no-repeat;
+  width: 54px;
+  height: 40px;
+}
+.reviews-product__text {
+  font-family: $fontDM;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 216%;
   text-align: center;
   letter-spacing: 0.04em;
-  color: #000000;
+  color: $main-text-color;
   border-bottom: 1px solid #e1e1e1;
 }
-.reviews-nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+.reviesw-icon {
+  display: block;
+  margin: 52px auto 14px;
+  width: 64px;
+  height: 30px;
+  fill: $review-dots-color;
+}
+.reviews-title {
+  font-family: $fontDM;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 186%;
+  text-align: center;
+
+  color: $main-text-color;
+  .reviews-icon {
+    display: block;
+    width: 32px;
+    height: 4px;
+    margin: 52px auto 14px;
+
+    .reviews-nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
 }
