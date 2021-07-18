@@ -1,4 +1,5 @@
 .section-reviews {
+  width: 320px;
   padding: 80px 20px 86px 20px;
   margin: 0 auto;
   padding-left: 15px;
@@ -13,8 +14,16 @@
   margin-left: auto;
   margin-right: auto;
 }
+.reviews-product {
+  position: relative;
+  margin-top: 29px;
+}
 .reviews-product::before {
-  background-image: url('//src/images/sprite.svg#quotes');
+  content: '';
+  display: block;
+  position: absolute;
+  top: 28px;
+  background-image: url('/images/icon/quotes.svg');
   background-repeat: no-repeat;
   width: 54px;
   height: 40px;
@@ -29,6 +38,23 @@
   letter-spacing: 0.04em;
   color: $main-text-color;
   border-bottom: 1px solid #e1e1e1;
+}
+.reviesw-icon {
+  display: block;
+  margin: 52px auto 14px;
+  width: 64px;
+  height: 30px;
+  fill: $review-dots-color;
+}
+.reviews-title {
+  font-family: $fontDM;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 186%;
+  text-align: center;
+
+  color: $main-text-color;
 }
 .reviews-nav {
   display: flex;
