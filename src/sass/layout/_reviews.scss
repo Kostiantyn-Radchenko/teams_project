@@ -19,11 +19,15 @@
   margin-top: 29px;
 }
 .reviews-product::before {
+<<<<<<< Updated upstream
   content: '';
   display: block;
   position: absolute;
   top: 28px;
   background-image: url('/images/icon/quotes.svg');
+=======
+  background-image: url('/images/sprite.svg#quotes');
+>>>>>>> Stashed changes
   background-repeat: no-repeat;
   width: 54px;
   height: 40px;
@@ -39,6 +43,7 @@
   color: $main-text-color;
   border-bottom: 1px solid #e1e1e1;
 }
+<<<<<<< Updated upstream
 .reviesw-icon {
   display: block;
   margin: 52px auto 14px;
@@ -55,6 +60,13 @@
   text-align: center;
 
   color: $main-text-color;
+=======
+.reviews-icon {
+  display: block;
+  width: 32px;
+  height: 4px;
+  margin: 52px auto 14px;
+>>>>>>> Stashed changes
 }
 .reviews-nav {
   display: flex;
