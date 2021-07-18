@@ -1,5 +1,4 @@
-
-.about__section{
+.about__section {
   padding-top: 125px;
   padding-bottom: 39px;
   @media screen and(min-width:768px) {
@@ -11,9 +10,6 @@
     padding-bottom: 39px;
   }
 }
-
-
-
 
 .about__preTitle {
   font-family: $fontTitan;
@@ -54,7 +50,7 @@
   @media screen and(min-width:768px) {
     width: 340px;
     margin-bottom: 0;
-    }
+  }
   @media screen and(min-width:1200px) {
     width: 516px;
   }
@@ -67,18 +63,17 @@
   margin-bottom: 47px;
   @media screen and(min-width:768px) {
     @include fontStyle(500, 14, 24.64, 2);
-    }
+  }
   @media screen and(min-width:1200px) {
     @include fontStyle(500, 16, 28.16, 4);
-      }
+  }
 }
 .about__text--color {
   color: $light-text-color;
   margin-bottom: 10px;
-  
 }
 
-.about__text--margin{
+.about__text--margin {
   color: $light-text-color;
   margin-bottom: 47px;
 }
@@ -101,32 +96,27 @@
 
   @media screen and(min-width:768px) {
     @include fontStyle(700, 16, 20.83, 2);
-    }
+  }
   @media screen and(min-width:1200px) {
     @include fontStyle(700, 16, 20.83, 2);
-      }
+  }
 }
 
 .about__btnIcon {
-fill: currentColor;
-}
-
-.about__flexContainer {
-  @media screen and(min-width:768px) {
-    display: flex;
-    justify-content: center;
-    }
+  fill: currentColor;
 }
 
 .about__textContainer {
   @media screen and(min-width:768px) {
+    display: flex;
+    justify-content: center;
     width: 340px;
     margin-left: 17px;
     margin-top: 50px;
-    }
+  }
   @media screen and(min-width:1200px) {
     width: 463px;
     margin-left: 74px;
     margin-top: 55px;
-      }
+  }
 }
