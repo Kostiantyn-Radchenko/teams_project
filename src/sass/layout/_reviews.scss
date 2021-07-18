@@ -20,13 +20,19 @@
 }
 .reviews-product::before {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
   content: '';
   display: block;
   position: absolute;
   top: 28px;
   background-image: url('/images/icon/quotes.svg');
+<<<<<<< Updated upstream
 =======
   background-image: url('/images/sprite.svg#quotes');
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
   background-repeat: no-repeat;
   width: 54px;
@@ -44,6 +50,9 @@
   border-bottom: 1px solid #e1e1e1;
 }
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
 .reviesw-icon {
   display: block;
   margin: 52px auto 14px;
@@ -60,12 +69,15 @@
   text-align: center;
 
   color: $main-text-color;
+<<<<<<< Updated upstream
 =======
 .reviews-icon {
   display: block;
   width: 32px;
   height: 4px;
   margin: 52px auto 14px;
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 }
 .reviews-nav {
