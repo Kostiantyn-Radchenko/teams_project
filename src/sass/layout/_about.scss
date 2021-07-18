@@ -6,7 +6,7 @@
     padding-top: 130px;
     padding-bottom: 66px;
   }
-  @media screen and(min-width:1200px) {
+  @media screen and(min-width:1280px) {
     padding-top: 125px;
     padding-bottom: 39px;
   }
@@ -27,7 +27,7 @@
   @media screen and(min-width:768px) {
     @include fontStyle(400, 26, 29.77, 2);
   }
-  @media screen and(min-width:1200px) {
+  @media screen and(min-width:1280px) {
     @include fontStyle(400, 30, 34.35, 4);
   }
 }
@@ -42,20 +42,21 @@
   @media screen and(min-width:768px) {
     @include fontStyle(400, 48, 54.96, 4);
   }
-  @media screen and(min-width:1200px) {
+  @media screen and(min-width:1280px) {
     @include fontStyle(400, 58, 66.41, 6);
   }
 }
 
 .about__img {
-  width: 100%;
+  width: 320px;
+  margin: 0 auto;
   height: auto;
   margin-bottom: 46px;
   @media screen and(min-width:768px) {
     width: 340px;
     margin-bottom: 0;
     }
-  @media screen and(min-width:1200px) {
+  @media screen and(min-width:1280px) {
     width: 516px;
   }
 }
@@ -68,7 +69,7 @@
   @media screen and(min-width:768px) {
     @include fontStyle(500, 14, 24.64, 2);
     }
-  @media screen and(min-width:1200px) {
+  @media screen and(min-width:1280px) {
     @include fontStyle(500, 16, 28.16, 4);
       }
 }
@@ -102,7 +103,7 @@
   @media screen and(min-width:768px) {
     @include fontStyle(700, 16, 20.83, 2);
     }
-  @media screen and(min-width:1200px) {
+  @media screen and(min-width:1280px) {
     @include fontStyle(700, 16, 20.83, 2);
       }
 }
@@ -124,7 +125,7 @@ fill: currentColor;
     margin-left: 17px;
     margin-top: 50px;
     }
-  @media screen and(min-width:1200px) {
+  @media screen and(min-width:1280px) {
     width: 463px;
     margin-left: 74px;
     margin-top: 55px;
