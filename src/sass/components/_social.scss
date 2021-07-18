@@ -1,6 +1,10 @@
 .footer-social__list {
   display: flex;
   justify-content: flex-end;
+  margin-bottom: 46px;
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 50px;
+  }
 }
 
 .footer-social__item:not(:last-child) {
