@@ -1,9 +1,8 @@
 .section-reviews {
-  width: 320px;
+  width: 100%;
   padding: 80px 20px 86px 20px;
   margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 0;
 }
 
 .section-reviews__img {
@@ -15,20 +14,35 @@
   margin-right: auto;
 }
 .reviews-product {
+  display: block;
+  // width: 100vw;
   position: relative;
+  margin-right: 20px;
+  margin-left: 20px;
   margin-top: 29px;
+  margin-bottom: 30px;
+  // padding: 43px 66px 26px 57px;
+  background-color: #fafafa;
+  z-index: -2;
+  @media screen and (min-width: 768px) {
+    margin: 19px 74px 42px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin: 15px 177px;
+  }
 }
 .reviews-product::before {
   content: '';
   display: block;
   position: absolute;
   top: 28px;
+  left: 61px;
   background-image: url('/images/icon/quotes.svg');
-  background-image: url('/images/sprite.svg#quotes');
-
   background-repeat: no-repeat;
   width: 54px;
   height: 40px;
+  fill: $pseudo-color;
+  z-index: -1;
 }
 .reviews-product__text {
   font-family: $fontDM;
@@ -39,12 +53,27 @@
   text-align: center;
   letter-spacing: 0.04em;
   color: $main-text-color;
-  border-bottom: 1px solid #e1e1e1;
-}
+  // padding-bottom: 6px;
 
+  // border-bottom: 1px solid #e1e1e1;
+}
+.reviews-product p {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 43px 50px 20px;
+  background-image: repeating-linear-gradient(
+    to top,
+    $pseudo-color,
+    $pseudo-color 1px,
+    transparent 1px,
+    transparent 31px
+  );
+}
 .reviesw-icon {
   display: block;
-  margin: 52px auto 14px;
+  margin: 0 auto 14px;
   width: 64px;
   height: 30px;
   fill: $review-dots-color;
@@ -56,18 +85,26 @@
   font-size: 20px;
   line-height: 186%;
   text-align: center;
-
+  margin: 0;
+  padding: 0;
   color: $main-text-color;
-  .reviews-icon {
-    display: block;
-    width: 32px;
-    height: 4px;
-    margin: 52px auto 14px;
-
-    .reviews-nav {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+}
+.reviews-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  // margin-bottom: 129px;
+  margin-right: -18px;
+  @media screen and (min-width: 768px) {
+    margin-top: 35px;
   }
+}
+.reviews-nav__item {
+  margin-right: 18px;
+}
+.reviews-nav__icon {
+  width: 20px;
+  height: 20px;
+  fill: $slider-accent-color;
 }
