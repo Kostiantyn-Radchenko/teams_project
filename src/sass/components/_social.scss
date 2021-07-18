@@ -1,0 +1,33 @@
+.footer-social__list {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer-social__item:not(:last-child) {
+  margin-right: 28.24px;
+}
+.footer-social__link {
+  color: $main-color;
+  background-color: $socials-color;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+  @media screen and(min-width: 768px) {
+    width: 34px;
+    height: 34px;
+  }
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
