@@ -1,5 +1,4 @@
 .menu-open {
-  outline: 1px solid black;
   display: inline-flex;
   align-items: center;
   margin-left: auto;
@@ -10,7 +9,7 @@
 }
 
 .menu-icon {
-  fill: currentColor;
+  stroke: currentColor;
 }
 
 .mob-menu {
@@ -21,12 +20,17 @@
   max-width: 250px;
   width: 100%;
   background-color: $menu-bg-color;
-  z-index: 3;
+  z-index: 6;
   overflow: auto;
   // overflow-y: hidden;
   opacity: 1;
   transform: translateX(0);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-image: url('/images/icon/mob-frame.svg'), url('/images/icon/mob-frame.svg'),
+    url('/images/icon/mob-frame.svg'), url('/images/icon/mob-frame.svg'),
+    url('/images/icon/mob-frame.svg');
+  background-repeat: no-repeat;
+  background-position: 0 137px, 0 179px, 0 221px, 0 263px, 0 305px;
 }
 
 .mob-menu.is-hidden {
@@ -42,7 +46,6 @@
 }
 
 .mob-menu__close {
-  outline: 1px solid black;
   position: absolute;
   top: 23px;
   right: 20px;
@@ -51,7 +54,7 @@
   padding: 0;
   border: 0;
   background-color: transparent;
-  color: $accent-color;
+  color: $main-color;
 }
 
 .mob-menu__button {
