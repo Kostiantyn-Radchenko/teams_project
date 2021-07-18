@@ -1,11 +1,34 @@
-
+.hero {
+  background-color: $hero-bg-color;
+  position: relative;
+  overflow: hidden;
+}
 
 .hero__container {
   padding-top: 193px;
   padding-bottom: 160px;
+  position: relative;
+}
+
+.hero_image-icecream {
+  position: absolute;
+  bottom: 0;
+  right: 32px;
+}
+
+.eclipse {
+  position: absolute;
+  bottom: 75px;
+  right: -62px;
+  background-color: $pre-title-color;
+  width: 346px;
+  height: 344px;
+  border-radius: 50%;
 }
 
 .hero__title {
+  position: relative;
+  z-index: 3;
   font-family: $fontTitan;
   @include fontStyle(400, 26, 30, 4);
   text-transform: uppercase;
@@ -22,6 +45,8 @@
 }
 
 .hero__button-list {
+  position: relative;
+  z-index: 3;
   display: flex;
 }
 
