@@ -9,38 +9,38 @@ $fontTitan: 'Titan One', cursive;
 }
 
 // break point
-@mixin forSize($range) {
-  $mobile: 480px;
-  $tablets: 768px;
-  $desktop: 1200px;
+// @mixin forSize($range) {
+//   $mobile: 480px;
+//   $tablets: 768px;
+//   $desktop: 1200px;
 
-  @if $range == 'maxtablets' {
-    @media screen and (max-width: #{$tablets - 0.02px}) {
-      @content;
-    }
-  } @else if ($range == 'minimobile') {
-    @media screen and  (max-width : #{$mobile - 0.02px}) {
-      @content;
-    }
-  } @else if ($range == 'mobile') {
-    @media screen and  (min-width : #{$mobile}) {
-      @content;
-    }
-  } @else if ($range == 'tablets') {
-    @media screen and (min-width: #{$tablets}) {
-      @content;
-    }
-  } @else if ($range == 'desktop') {
-    @media screen and (min-width: #{$desktop}) {
-      @content;
-    }
-  } @else if ($range == 'maxdesktop') {
-    @media screen and (max-width: #{$desktop} - 0.02) {
-      @content;
-    }
-  } @else if ($range == 'minmaxtablets') {
-    @media screen and (min-width: #{$tablets}) and (max-width: 1199px) {
-      @content;
-    }
-  }
-}
+//   @if $range == 'maxtablets' {
+//     @media screen and (max-width: #{$tablets - 0.02px}) {
+//       @content;
+//     }
+//   } @else if ($range == 'minimobile') {
+//     @media screen and  (max-width : #{$mobile - 0.02px}) {
+//       @content;
+//     }
+//   } @else if ($range == 'mobile') {
+//     @media screen and  (min-width : #{$mobile}) {
+//       @content;
+//     }
+//   } @else if ($range == 'tablets') {
+//     @media screen and (min-width: #{$tablets}) {
+//       @content;
+//     }
+//   } @else if ($range == 'desktop') {
+//     @media screen and (min-width: #{$desktop}) {
+//       @content;
+//     }
+//   } @else if ($range == 'maxdesktop') {
+//     @media screen and (max-width: #{$desktop} - 0.02) {
+//       @content;
+//     }
+//   } @else if ($range == 'minmaxtablets') {
+//     @media screen and (min-width: #{$tablets}) and (max-width: 1199px) {
+//       @content;
+//     }
+//   }
+// }

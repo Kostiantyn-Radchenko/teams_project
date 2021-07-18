@@ -1,0 +1,76 @@
+footer {
+  background-color: $light-bg-color;
+}
+
+.footer-title {
+  font-family: $fontTitan;
+  text-transform: uppercase;
+  &__text {
+    @include fontStyle(400, 18, 21, 1);
+    color: $pre-title-color;
+
+    @media screen and (min-width: 768px) {
+      @include fontStyle(400, 26, 30, 4);
+    }
+
+    @media screen and (min-width: 1200px) {
+      @include fontStyle(400, 30, 34, 4);
+    }
+    &--second {
+      @include fontStyle(400, 34, 39, 4);
+      color: $accent-color;
+
+      @media screen and (min-width: 768px) {
+        @include fontStyle(400, 48, 55, 6);
+      }
+
+      @media screen and (min-width: 1200px) {
+        @include fontStyle(400, 58, 66, 4);
+      }
+    }
+  }
+}
+
+.footer-social__contacts {
+  font-family: $fontDM;
+  @include fontStyle(700, 12, 22, 0);
+
+  @media screen and (min-width: 768px) {
+    @include fontStyle(700, 14, 26, 0);
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include fontStyle(700, 16, 30, 2);
+  }
+
+  &--link {
+    color: $accent-color;
+
+    &:hover,
+    &:focus {
+      color: $socials-color;
+    }
+  }
+}
+
+.footer-signature__text {
+  @include fontStyle(700, 14, 21, 0);
+  color: $light-text-color;
+
+  @media screen and (min-width: 1200px) {
+    @include fontStyle(700, 14, 21, 2);
+  }
+}
+
+.footer-signature {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-top: 22px;
+  padding-bottom: 24px;
+  border-top: 1px solid black;
+
+  &__text {
+    width: 150px;
+  }
+}
