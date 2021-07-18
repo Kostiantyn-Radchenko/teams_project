@@ -4,10 +4,12 @@
         <div class="container">
             <ul class="card">
                 <li class="card__item">
-                    <p class="card__representations">Cafe</p>
-                    <b class="card__city">Chicago</b>
+                    <span class="card__thumb">
+                        <p class="card__representations">Cafe</p>
+                    </span>
+                    <p class="card__city">Chicago</p>
                     <p class="card__text">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
-                    <hr>
+                    
                     <ul class="card-period">
                         <li class="card-period__item">
                             <p class="card-period__days">Monday - Friday</p>
@@ -18,7 +20,7 @@
                             <p class="card-period__time">08:00 AM - 16:00 PM</p>
                         </li>
                     </ul>
-                    <hr>
+                    
                     <ul class="card-address">
                         <li class="card-address__item">
                             <a class="card-address__link" href="mailto:noreply@envato.com">noreply@envato.com</a>
@@ -29,10 +31,12 @@
                     </ul>
                 </li>
                 <li class="card__item">
-                    <p class="card__representations">Brackfast</p>
-                    <b class="card__city">Los Angeles</b>
+                    <span class="card__thumb">
+                        <p class="card__representations card__representations--color">Brackfast</p>
+                    </span>
+                    <p class="card__city">Los Angeles</p>
                     <p class="card__text">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
-                    <hr>
+                    
                     <ul class="card-period">
                         <li class="card-period__item">
                             <p class="card-period__days">Monday - Friday</p>
@@ -43,7 +47,7 @@
                             <p class="card-period__time">08:00 AM - 16:00 PM</p>
                         </li>
                     </ul>
-                    <hr>
+                    
                     <ul class="card-address">
                         <li class="card-address__item">
                             <a class="card-address__link" href="mailto:noreply@envato.com">noreply@envato.com</a>
@@ -54,10 +58,12 @@
                     </ul>
                 </li>
                 <li class="card__item">
-                    <p class="card__representations">Cafe</p>
-                    <b class="card__city">New York</b>
+                    <span class="card__thumb">
+                        <p class="card__representations">Cafe</p>
+                    </span>
+                    <p class="card__city">New York</p>
                     <p class="card__text">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
-                    <hr>
+                    
                     <ul class="card-period">
                         <li class="card-period__item">
                             <p class="card-period__days">Monday - Friday</p>
@@ -68,7 +74,7 @@
                             <p class="card-period__time">08:00 AM - 16:00 PM</p>
                         </li>
                     </ul>
-                    <hr>
+                    
                     <ul class="card-address">
                         <li class="card-address__item">
                             <a class="card-address__link" href="mailto:noreply@envato.com">noreply@envato.com</a>
@@ -79,7 +85,19 @@
                     </ul>
                 </li>
             </ul>  
-            <button class="card__button" type="button">Our Locations &#62;</button>
-            <button class="card__button" type="button">Franchise &#62;</button>
+            <div class="card-button">
+                <button class="card-button__button" type="button">
+                    Our Locations
+                    <svg class="card-button__icon">
+                        <use href="images/sprite.svg#button-arrow"></use>
+                    </svg>
+                </button>
+                <button class="card-button__button card-button__button--color" type="button">
+                    Franchise
+                    <svg class="card-button__icon">
+                        <use href="images/sprite.svg#button-arrow"></use>
+                    </svg>
+                </button>
+            </div>
         </div>
     </section>
