@@ -193,7 +193,7 @@ body {
 
 .hero {
   background-color: #ffb8ca;
-  background-image: url("../../images/header-icecream-171@1x.png"), url("../../images/header-circle-346@1x.png");
+  background-image: url("../images/header-icecream-171@1x.png"), url("../images/header-circle-346@1x.png");
   background-size: contain, contain;
   background-repeat: no-repeat;
   background-position: bottom 0 right 32px, top 83px left 36px;
@@ -201,7 +201,7 @@ body {
 
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: url("../../images/header-icecream-171@2x.png"), url("../../images/header-circle-346@2x.png");
+    background-image: url("../images/header-icecream-171@2x.png"), url("../images/header-circle-346@2x.png");
   }
 }
 
