@@ -1,16 +1,38 @@
+.about {
+  background-color: $light-bg-color;
+}
+
 .about__section {
   padding-top: 125px;
   padding-bottom: 39px;
+  background-image: url(/images/about-bg-milk-480@1x.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50% 90%;
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(/images/about-bg-milk-480@2x.png);
+  }
+
+  // @media screen and (min-width: 768px) {
+  // }
+  // @media screen and (min-width: 1280px) {
+  // }
   @media screen and(min-width:768px) {
+    background-image: none;
     padding-top: 130px;
     padding-bottom: 66px;
   }
   @media screen and(min-width:1280px) {
+    background-image: url(/images/about-bg-milk-1200@1x.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(/images/about-bg-milk-1200@2x.png);
+    }
     padding-top: 125px;
     padding-bottom: 39px;
   }
 }
-
 
 .about__preTitle {
   font-family: $fontTitan;
@@ -96,8 +118,9 @@
   padding-top: 12px;
   padding-bottom: 10px;
 
-  &:focus,&:hover {
-    background-color: $button-hover-color ;
+  &:focus,
+  &:hover {
+    background-color: $button-hover-color;
   }
 
   @media screen and(min-width:768px) {
@@ -130,35 +153,11 @@
     margin-top: 55px;
   }
 }
-// Леша
-.about__container {
-  width: 100%;
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 20px;
-  padding-right: 20px;
-  background-color: $light-bg-color;
-
-  background-image: url(/images/about-bg-milk-480@1x.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: 50% 90%;
-  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    background-image: url(/images/about-bg-milk-480@2x.png);
-  }
-
-
-  @media screen and (min-width: 768px) {
-    background-image: none;
-    max-width: 768px;
-  }
-  @media screen and (min-width: 1280px) {
-    max-width: 1280px;
-    background-image: url(/images/about-bg-milk-1200@1x.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url(/images/about-bg-milk-1200@2x.png);
-    }
-  }
-}
+// // Леша
+// .about__container {
+//   width: 100%;
+//   margin-right: auto;
+//   margin-left: auto;
+//   padding-left: 20px;
+//   padding-right: 20px;
+// }

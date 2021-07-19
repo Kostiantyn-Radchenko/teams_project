@@ -1,5 +1,4 @@
 .hero {
-  background-color: $hero-bg-color;
   position: relative;
   overflow: hidden;
 }
@@ -8,33 +7,43 @@
   padding-top: 193px;
   padding-bottom: 160px;
   position: relative;
+  @media screen and (min-width: 768px) {
+    padding-top: 15px;
+    padding-bottom: 34px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 56px;
+  }
 }
 
-.hero_image-icecream {
-  position: absolute;
-  bottom: 0;
-  right: 32px;
-}
-
-.eclipse {
-  position: absolute;
-  bottom: 75px;
-  right: -62px;
-  background-color: $pre-title-color;
-  width: 346px;
-  height: 344px;
-  border-radius: 50%;
+.hero__wrap {
+  margin-bottom: 10px;
+  position: relative;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 8px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 9px;
+  }
 }
 
 .hero__title {
-  position: relative;
-  z-index: 3;
   font-family: $fontTitan;
   @include fontStyle(400, 26, 30, 4);
   text-transform: uppercase;
-  margin-bottom: 19px;
   max-width: 218px;
   color: $main-color;
+  @media screen and (min-width: 768px) {
+    @include fontStyle(400, 22, 25, 4);
+    max-width: 162px;
+  }
+  @media screen and (min-width: 1280px) {
+    @include fontStyle(400, 38, 44, 4);
+    max-width: 277px;
+  }
 }
 
 .hero__title-span {
@@ -42,16 +51,69 @@
   @include fontStyle(400, 26, 30, 4);
   text-transform: uppercase;
   color: $accent-color;
+  @media screen and (min-width: 768px) {
+    @include fontStyle(400, 34, 31, 4);
+  }
+  @media screen and (min-width: 1280px) {
+    @include fontStyle(400, 58, 52, 4);
+  }
+}
+
+.hero__chain-list {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+  }
+}
+
+.hero__chain-item {
+  &:not(:last-child) {
+    margin-bottom: 13px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 15px;
+  }
+}
+
+.hero__chain-text {
+  @include fontStyle(400, 8, 10, 4);
+  color: $main-color;
+  @media screen and (min-width: 1280px) {
+    @include fontStyle(400, 14, 18, 4);
+  }
+}
+
+.hero__chain-span {
+  display: block;
+  font-family: $fontTitan;
+  @include fontStyle(400, 28, 32, 4);
+  color: $accent-color;
+  @media screen and (min-width: 1280px) {
+    @include fontStyle(400, 46, 53, 4);
+  }
 }
 
 .hero__button-list {
   position: relative;
   z-index: 3;
   display: flex;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 66px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 112px;
+  }
 }
 
 .hero__button-item:not(:last-child) {
   margin-right: 8px;
+  @media screen and (min-width: 1280px) {
+    &:not(:last-child) {
+      margin-right: 17px;
+    }
+  }
 }
 
 .hero__button-link {
@@ -73,16 +135,52 @@
       background-color: $button-hover-color;
     }
   }
+  @media screen and (min-width: 1280px) {
+    @include fontStyle(400, 14, 18, 4);
+    padding-left: 24px;
+    padding-right: 24px;
+  }
 }
 
 .hero-text {
   display: none;
-}
-
-.hero__chain-list {
-  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+    max-width: 114px;
+    @include fontStyle(400, 8, 12, 4);
+    margin-left: 120px;
+    color: $main-color;
+    margin-bottom: 7px;
+  }
+  @media screen and (min-width: 1280px) {
+    @include fontStyle(400, 14, 20, 4);
+    max-width: 200px;
+    margin-left: 190px;
+    margin-bottom: 20px;
+  }
 }
 
 .hero__arrow-button {
   display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 120px;
+    width: 18px;
+    height: 18px;
+    border: 0;
+    border-radius: 50%;
+    background-color: $main-color;
+    color: $accent-color;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 26px;
+    height: 26px;
+    margin-left: 190px;
+  }
+}
+
+.hero__arrow-button-icon {
+  fill: currentColor;
 }
