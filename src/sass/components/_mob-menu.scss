@@ -43,6 +43,9 @@
     max-width: 254px;
     background-position: 0 114px, 0 156px, 0 198px, 0 240px, 0 282px;
   }
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
 }
 
 .mob-menu.is-hidden {
