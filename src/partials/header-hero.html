@@ -1,4 +1,14 @@
 <header class="header">
+      <div class="header__eclipse"></div>
+      <picture class="header__picture">
+        <source srcset="images/header-icecream-1200@1x.png 1x, images/header-icecream-1200@2x.png 2x"
+          media="(min-width: 1280px)">
+        <source srcset="images/header-icecream-768@1x.png 1x, images/header-icecream-768@2x.png 2x"
+          media="(min-width: 768px)">
+        <source srcset="images/header-icecream-480@1x.png 1x, images/header-icecream-480@2x.png 2x"
+          media="(min-width: 320px)">
+        <img class="header__image-icecream" src="images/header-icecream-480@1x.png" alt="icecream">
+      </picture>
   <div class="header__container container">
     <a href="#" class="header__logo">
       <img srcset="images/logo@1x.png 1x, images/logo@2x.png 2x" src="images/logo@1x.png" alt="logo" />
@@ -6,7 +16,7 @@
     <nav class="nav">
       <ul class="nav_list">
         <li class="nav__item">
-          <a href="./index.html" class="nav__link">Home</a>
+          <a href="./index.html" class="nav__link nav__link--current">Home</a>
         </li>
         <li class="nav__item">
           <a href="#hero" class="nav__link">About us</a>
@@ -29,7 +39,7 @@
     </button>
     <button class="header__button button" type="button">
       Buy now
-      <svg width="4" height="8" class="header__button-icon">
+      <svg width="10" height="10" class="header__button-icon">
         <use href="images/sprite.svg#button-arrow"></use>
       </svg>
     </button>
@@ -69,11 +79,37 @@
   </div>
   <section id="hero" class="hero">
     <div class="hero__container container">
-      <div class="eclipse"></div>
-      <img class="hero_image-icecream"
-        srcset="images/header-icecream-171@1x.png 1x, images/header-icecream-171@2x.png 2x"
-        src="images/header-icecream-171@1x.png" alt="icecream">
-      <h1 class="hero__title">ice cream made with <span class="hero__title-span">passion</span></h1>
+      <picture class="header__picture">
+        <source srcset="images/header-milk-1200@1x.png 1x, images/header-milk-1200@2x.png 2x" media="(min-width: 1280px)">
+        <source srcset="images/header-milk-768@1x.png 1x, images/header-milk-768@2x.png 2x" media="(min-width: 768px)">
+        <img class="header__image-milk" src="images/header-milk-768@1x.png" alt="milk">
+      </picture>
+      <picture class="header__picture">
+        <source srcset="images/header-girl-1200@1x.png 1x, images/header-girl-1200@2x.png 2x" media="(min-width: 1280px)">
+        <source srcset="images/header-girl-768@1x.png 1x, images/header-girl-768@2x.png 2x" media="(min-width: 768px)">
+        <img class="header__image-girl" src="images/header-girl-768@1x.png" alt="girl">
+      </picture>
+      <picture class="header__picture">
+        <source srcset="images/header-dot-1200@1x.png 1x, images/header-dot-1200@2x.png 2x" media="(min-width: 1280px)">
+        <source srcset="images/header-dot-768@1x.png 1x, images/header-dot-768@2x.png 2x" media="(min-width: 768px)">
+        <img class="header__image-first-dot" src="images/header-dot-768@1x.png" alt="list-mark">
+      </picture>
+      <picture class="header__picture">
+        <source srcset="images/header-dot-1200@1x.png 1x, images/header-dot-1200@2x.png 2x" media="(min-width: 1280px)">
+        <source srcset="images/header-dot-768@1x.png 1x, images/header-dot-768@2x.png 2x" media="(min-width: 768px)">
+        <img class="header__image-second-dot" src="images/header-dot-768@1x.png" alt="list-mark">
+      </picture>
+      <div class="hero__wrap">
+        <h1 class="hero__title">ice cream made with <span class="hero__title-span">passion</span></h1>
+        <ul class="hero__chain-list">
+          <li class="hero__chain-item">
+            <p class="hero__chain-text"><span class="hero__chain-span">16</span>cafes</p>
+          </li>
+          <li class="hero__chain-item">
+            <p class="hero__chain-text"><span class="hero__chain-span">23</span>food trucks</p>
+          </li>
+        </ul>
+      </div>
       <ul class="hero__button-list">
         <li class="hero__button-item">
           <a href="#products" class="hero__button-link hero__button-link--pink button">Products</a>
@@ -86,12 +122,11 @@
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
         labore et
       </p>
-      <button type="button" class="hero__arrow-button arrow-button"></button>
-      <ul class="hero__chain-list">
-        <li class="hero__chain-item"><span class="hero__chain-span">16</span>cafes</li>
-        <li class="hero__chain-item"><span class="hero__chain-span">23</span>food trucks</li>
-      </ul>
+      <button type="button" class="hero__arrow-button arrow-button">
+        <svg width="6" height="8" class="hero__arrow-button-icon">
+          <use href="images/sprite.svg#arrow-right2"></use>
+        </svg>
+      </button>
     </div>
   </section>
 </header>
-<!-- <script src="menu.js"></script> -->
