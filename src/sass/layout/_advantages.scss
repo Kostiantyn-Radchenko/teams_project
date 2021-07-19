@@ -1,6 +1,15 @@
 
 .advantages{
     background-color: $light-bg-color;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.advantages__container{
+    @media screen and (min-width: 480px) {
+        display: flex;
+        flex-wrap: wrap;
+      }
 }
 
 
@@ -13,13 +22,14 @@
     left: 20px;
     top: 3650px;
     display: block;
-    margin-left: 20px;
     padding-top: 39px;
     padding-bottom: 16px;
+    
    
 }
 
-.advantages__item--apple::before{
+.advantages__item--apple{
+    &::before{
     content: '';
     background-image: url('/images/icon/icon-apple@1x.png');
     background-repeat: no-repeat;
@@ -29,9 +39,25 @@
     left: 20px;
     top: 3844px;
     display: block;
-    margin-left: 20px;
     padding-top: 39px;
     padding-bottom: 16px;
+    }
+   
+    
+}
+
+.advantages__item{
+    &:not(:last-child){
+    margin-bottom: 34px;
+    }
+    @media screen and (min-width: 480px) {
+        flex-basis: calc((100% - 90px) / 3);
+        margin-left: 30px;
+
+    }
+    @media screen and (min-width: 768px) {
+        flex-basis: calc((100% - 180px) / 3);
+    }
     
 }
 
@@ -44,19 +70,19 @@
     left: 20px;
     top: 4038px;
     display: block;
-    margin-left: 20px;
     padding-top: 39px;
     padding-bottom: 16px;
 }
 
-.numbers{
+.advantages__numbers{
     font-family: Titan One;
     font-size: 36px;
     line-height: 41px;
     color: $accent-color;
-    margin-left: 20px;
-    margin-right: 70px;
-    padding-bottom: 34px;
+    margin-bottom: 20px;
+    @media screen and (min-width: 768px) {
+        margin-bottom: 34px;
+    }
 }
 
 .advantages__text{
@@ -66,15 +92,13 @@
     width: 230px;
     line-height: 170%;
     color:$main-text-color;
-    margin-left: 20px;
-    margin-right: 70px;
-    padding-bottom: 38px;
 }
 
 .advantages__columns{
+    @media screen and (min-width: 480px) {
+    margin-left: -30px;
+    display: flex;
+    }
     @media screen and (min-width: 768px) {
-        display: flex;
-        justify-content: center;
-        align-items: center;
       }
 }
