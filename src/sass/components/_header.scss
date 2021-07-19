@@ -75,10 +75,10 @@
     top: 98px;
     right: 34px;
   }
-  // @media screen and (min-width: 1280px) {
-  //   right: 109px;
-  //   bottom: 0;
-  // }
+  @media screen and (min-width: 1280px) {
+    top: 138px;
+    right: 107px;
+  }
 }
 
 .header__image-second-dot {
@@ -88,6 +88,10 @@
     position: absolute;
     top: 154px;
     right: 34px;
+  }
+  @media screen and (min-width: 1280px) {
+    top: 222px;
+    right: 107px;
   }
 }
 
