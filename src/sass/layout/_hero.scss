@@ -1,5 +1,4 @@
 .hero {
-  background-color: $hero-bg-color;
   position: relative;
   overflow: hidden;
 }
@@ -10,31 +9,17 @@
   position: relative;
   @media screen and (min-width: 768px) {
     padding-top: 0;
+    padding-bottom: 34px;
   }
 }
 
-.hero_image-icecream {
-  position: absolute;
-  bottom: 0;
-  right: 32px;
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
-    right: 247px;
-  }
-}
-
-.eclipse {
-  position: absolute;
-  bottom: 75px;
-  right: -62px;
-  background-color: $pre-title-color;
-  width: 346px;
-  height: 344px;
-  border-radius: 50%;
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
-    bottom: 46px;
-    right: 137px;
-    width: 324px;
-    height: 322px;
+.hero__wrap {
+  margin-bottom: 10px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 8px;
   }
 }
 
@@ -44,9 +29,12 @@
   font-family: $fontTitan;
   @include fontStyle(400, 26, 30, 4);
   text-transform: uppercase;
-  margin-bottom: 19px;
   max-width: 218px;
   color: $main-color;
+  @media screen and (min-width: 768px) {
+    @include fontStyle(400, 22, 25, 4);
+    max-width: 162px;
+  }
 }
 
 .hero__title-span {
@@ -54,12 +42,43 @@
   @include fontStyle(400, 26, 30, 4);
   text-transform: uppercase;
   color: $accent-color;
+  @media screen and (min-width: 768px) {
+    @include fontStyle(400, 34, 31, 4);
+  }
+}
+
+.hero__chain-list {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+  }
+}
+
+.hero__chain-item {
+  margin-bottom: 13px;
+}
+
+.hero__chain-text {
+  @include fontStyle(400, 8, 10, 4);
+  color: $main-color;
+}
+
+.hero__chain-span {
+  display: block;
+  font-family: $fontTitan;
+  @include fontStyle(400, 28, 32, 4);
+  color: $accent-color;
 }
 
 .hero__button-list {
   position: relative;
   z-index: 3;
   display: flex;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 66px;
+  }
 }
 
 .hero__button-item:not(:last-child) {
@@ -89,12 +108,32 @@
 
 .hero-text {
   display: none;
-}
-
-.hero__chain-list {
-  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+    max-width: 114px;
+    @include fontStyle(400, 8, 12, 4);
+    margin-left: 120px;
+    color: $main-color;
+    margin-bottom: 7px;
+  }
 }
 
 .hero__arrow-button {
   display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 120px;
+    width: 18px;
+    height: 18px;
+    border: 0;
+    border-radius: 50%;
+    background-color: $main-color;
+    color: $accent-color;
+  }
+}
+
+.hero__arrow-button-icon {
+  fill: currentColor;
 }

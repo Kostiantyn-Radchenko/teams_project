@@ -1,6 +1,84 @@
 .header {
   position: relative;
   background-color: $hero-bg-color;
+  overflow-x: hidden;
+}
+
+.header__eclipse {
+  position: absolute;
+  bottom: 75px;
+  right: -62px;
+  background-color: $pre-title-color;
+  width: 346px;
+  height: 344px;
+  border-radius: 50%;
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    bottom: 69px;
+    right: 145px;
+    width: 324px;
+    height: 322px;
+  }
+}
+
+.header__image-icecream {
+  position: absolute;
+  bottom: 0;
+  right: 32px;
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    right: 247px;
+  }
+}
+
+.header__image-milk {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+    position: absolute;
+    left: 34px;
+    bottom: 28px;
+  }
+  @media screen and (min-width: 1280px) {
+    left: 77px;
+    bottom: 45px;
+  }
+}
+
+.header__image-girl {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+    position: absolute;
+    right: 34px;
+    bottom: 0;
+  }
+  @media screen and (min-width: 1280px) {
+    right: 109px;
+    bottom: 0;
+  }
+}
+
+.header__image-first-dot {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+    position: absolute;
+    top: 98px;
+    right: 34px;
+  }
+  // @media screen and (min-width: 1280px) {
+  //   right: 109px;
+  //   bottom: 0;
+  // }
+}
+
+.header__image-second-dot {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+    position: absolute;
+    top: 154px;
+    right: 34px;
+  }
 }
 
 .header__container {
@@ -8,9 +86,9 @@
   align-items: center;
   padding-top: 6px;
   padding-bottom: 6px;
-  background-color: $hero-bg-color;
   overflow-y: hidden;
   @media screen and (min-width: 768px) and (max-width: 1279px) {
+    position: relative;
     padding-top: 37px;
     padding-left: 34px;
     padding-right: 34px;
