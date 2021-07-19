@@ -1,22 +1,12 @@
 .about {
   background-color: $light-bg-color;
-}
-
-.about__section {
-  padding-top: 125px;
-  padding-bottom: 39px;
   background-image: url(/images/about-bg-milk-480@1x.png);
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: 50% 90%;
+  background-position: 50% 87%;
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background-image: url(/images/about-bg-milk-480@2x.png);
   }
-
-  // @media screen and (min-width: 768px) {
-  // }
-  // @media screen and (min-width: 1280px) {
-  // }
   @media screen and(min-width:768px) {
     background-image: none;
     padding-top: 130px;
@@ -26,12 +16,23 @@
     background-image: url(/images/about-bg-milk-1200@1x.png);
     background-repeat: no-repeat;
     background-size: contain;
+    background-position: 50% 100%;
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(/images/about-bg-milk-1200@2x.png);
     }
     padding-top: 125px;
     padding-bottom: 39px;
   }
+}
+
+.about__section {
+  padding-top: 125px;
+  padding-bottom: 39px;
+
+  // @media screen and (min-width: 768px) {
+  // }
+  // @media screen and (min-width: 1280px) {
+  // }
 }
 
 .about__preTitle {
