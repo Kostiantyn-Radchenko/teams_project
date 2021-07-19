@@ -61,7 +61,7 @@
           <use href="images/sprite.svg#icon-close"></use>
         </svg>
       </button>
-      <button data-modal-open class="mob-menu__button button" type="button">
+      <button class="mob-menu__button button" type="button" data-modal-open>
         Buy now
         <svg width="10" height="10" class="mob-menu__button-icon">
           <use href="images/sprite.svg#button-arrow"></use>
@@ -69,7 +69,12 @@
       </button>
       <ul class="mob-menu__nav-list">
         <li class="mob-menu__nav-item">
-          <a data-menu-close href="./index.html" class="mob-menu__nav-link mob-menu__nav-link--current">Home</a>
+          <a
+            data-menu-close
+            href="./index.html"
+            class="mob-menu__nav-link mob-menu__nav-link--current"
+            >Home</a
+          >
         </li>
         <li class="mob-menu__nav-item">
           <a data-menu-close href="#hero" class="mob-menu__nav-link">About us</a>
