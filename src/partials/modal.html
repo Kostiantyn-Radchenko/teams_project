@@ -1,0 +1,41 @@
+<!-- modal -->
+<div class="backdrop backdrop--is-hidden" data-modal>
+    <div class="modal">
+        <form class="form">
+
+            <b class="form__tittle--bold">Order Now</b>
+            <label class="form__label">
+                <span class="form__label-name">Name</span>
+                <input type="text" name="name" class="form__input">
+            </label>
+            <label class="form__label">
+                <span class="form__label-name">Telephone</span>
+                <input type="tel" name="tel" class="form__input">
+            </label>
+            <label class="form__label">
+                <span class="form__label-name">Address</span>
+                <input type="text" name="address" class="form__input">
+            </label>
+            <!-- <label>
+                <span class="form__label-name">Product</span> -->
+                <select name="products" class="form__label-select">
+                    <option value="ic">Ice Cream</option>
+                    <option value="ms">Milkshake</option>
+                    <option value="coffee">Ice Coffee</option>
+                </select>
+            <!-- </label> -->
+            <label class="form__label">
+                <span class="form__label-name">Comments</span>
+                <textarea class="form__textarea" name="comments" placeholder="I love Go It"></textarea>
+            </label>
+            <button type="submit" class="form__submit-button">Buy</button>
+
+        </form>
+        <button class="form__close-button" data-modal-close>
+            <svg width=18px height=18px>
+                <use href="images/sprite.svg#icon-close"></use>
+            </svg>
+        </button>
+    </div>
+
+</div>
