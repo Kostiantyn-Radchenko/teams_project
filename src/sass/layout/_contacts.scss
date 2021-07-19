@@ -1,14 +1,11 @@
 .contacts {
-
   padding-top: 86px;
   background: linear-gradient(to bottom, $main-color 170px, $light-bg-color 170px);
 
-  background: linear-gradient(to bottom, $main-color 84px, $light-bg-color 84px);
   @media screen and (min-width: 768px) {
     padding-top: 119px;
     background: linear-gradient(to bottom, $main-color 197px, $light-bg-color 197px);
   }
-
 }
 
 .card {
