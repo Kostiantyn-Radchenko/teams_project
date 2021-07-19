@@ -11,6 +11,9 @@
     padding-top: 0;
     padding-bottom: 34px;
   }
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 56px;
+  }
 }
 
 .hero__wrap {
@@ -20,6 +23,9 @@
     justify-content: space-between;
     align-items: center;
     padding-right: 8px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 9px;
   }
 }
 
@@ -35,6 +41,10 @@
     @include fontStyle(400, 22, 25, 4);
     max-width: 162px;
   }
+  @media screen and (min-width: 1280px) {
+    @include fontStyle(400, 38, 44, 4);
+    max-width: 277px;
+  }
 }
 
 .hero__title-span {
@@ -44,6 +54,9 @@
   color: $accent-color;
   @media screen and (min-width: 768px) {
     @include fontStyle(400, 34, 31, 4);
+  }
+  @media screen and (min-width: 1280px) {
+    @include fontStyle(400, 58, 52, 4);
   }
 }
 
@@ -57,12 +70,20 @@
 }
 
 .hero__chain-item {
-  margin-bottom: 13px;
+  &:not(:last-child) {
+    margin-bottom: 13px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 15px;
+  }
 }
 
 .hero__chain-text {
   @include fontStyle(400, 8, 10, 4);
   color: $main-color;
+  @media screen and (min-width: 1280px) {
+    @include fontStyle(400, 14, 18, 4);
+  }
 }
 
 .hero__chain-span {
@@ -70,6 +91,9 @@
   font-family: $fontTitan;
   @include fontStyle(400, 28, 32, 4);
   color: $accent-color;
+  @media screen and (min-width: 1280px) {
+    @include fontStyle(400, 46, 53, 4);
+  }
 }
 
 .hero__button-list {
@@ -79,10 +103,18 @@
   @media screen and (min-width: 768px) {
     margin-bottom: 66px;
   }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 112px;
+  }
 }
 
 .hero__button-item:not(:last-child) {
   margin-right: 8px;
+  @media screen and (min-width: 1280px) {
+    &:not(:last-child) {
+      margin-right: 17px;
+    }
+  }
 }
 
 .hero__button-link {
@@ -104,6 +136,11 @@
       background-color: $button-hover-color;
     }
   }
+  @media screen and (min-width: 1280px) {
+    @include fontStyle(400, 14, 18, 4);
+    padding-left: 24px;
+    padding-right: 24px;
+  }
 }
 
 .hero-text {
@@ -115,6 +152,12 @@
     margin-left: 120px;
     color: $main-color;
     margin-bottom: 7px;
+  }
+  @media screen and (min-width: 1280px) {
+    @include fontStyle(400, 14, 20, 4);
+    max-width: 200px;
+    margin-left: 190px;
+    margin-bottom: 20px;
   }
 }
 
@@ -131,6 +174,11 @@
     border-radius: 50%;
     background-color: $main-color;
     color: $accent-color;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 26px;
+    height: 26px;
+    margin-left: 190px;
   }
 }
 
