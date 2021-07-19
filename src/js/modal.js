@@ -16,6 +16,8 @@
   });
 
   function toggleModal() {
+
     refs.modal.classList.toggle('backdrop--is-hidden');
+
   }
 })();
