@@ -103,9 +103,11 @@
 .reviews-nav__item {
   margin-right: 18px;
 }
-// .reviews-nav__icon .reviews-nav__icon-grey {
-//   fill: $slider-light-color;
-// }
+.reviews-nav__icon-grey {
+  width: 20px;
+  height: 20px;
+  fill: $slider-light-color;
+}
 .reviews-nav__icon {
   width: 20px;
   height: 20px;
