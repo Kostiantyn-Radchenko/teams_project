@@ -1,0 +1,373 @@
+.products__section {
+  padding-top: 121px;
+  padding-bottom: 98px;
+
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 100%;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 122px;
+    padding-bottom: 112px;
+    padding-left: 34px;
+    padding-right: 34px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 127px;
+    padding-bottom: 119px;
+    padding-left: 112px;
+    padding-right: 112px;
+  }
+}
+
+.products__heading {
+  margin-bottom: 31px;
+
+  text-transform: uppercase;
+
+  &--label {
+    margin-bottom: 15px;
+    font-family: Titan One;
+    color: $pre-title-color;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    @include fontStyle(400, 18, 21, 4);
+
+    @media screen and (min-width: 768px) {
+      @include fontStyle(400, 26, 30, 4);
+    }
+
+    @media screen and (min-width: 1200px) {
+      @include fontStyle(400, 30, 34, 4);
+    }
+  }
+
+  &--title {
+    display: block;
+    padding: 0;
+    font-family: $fontTitan;
+    color: $accent-color;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    @include fontStyle(400, 34, 39, 4);
+
+    @media screen and (min-width: 768px) {
+      @include fontStyle(400, 48, 55, 4);
+    }
+
+    @media screen and (min-width: 1200px) {
+      @include fontStyle(400, 58, 66, 6);
+    }
+  }
+}
+
+.products__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-left: auto;
+  margin-right: auto;
+  //   padding-left: 15px;
+  //   padding-right: 15px;
+  width: 100%;
+
+  //   padding-top: 125px;
+  outline: 3px solid blue;
+
+  @media screen and (min-width: 768px) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    // padding-top: 48px;
+    max-width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    gap: 23px;
+    // padding-top: 49px;
+    max-width: 1053px;
+  }
+}
+
+// .products-card {
+//   margin-left: auto;
+//   margin-right: auto;
+//   //   padding-left: 20px;
+//   //   padding-right: 20px;
+//   width: 100%;
+
+//   outline: 3px solid red;
+// }
+
+.products__elements {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+
+  padding-bottom: 41px;
+  padding-left: 40px;
+  padding-right: 40px;
+
+  height: 444px;
+  border-radius: 24px;
+  outline: 3px solid yellow;
+
+  @media screen and (min-width: 768px) {
+    height: 445px;
+    padding-bottom: 40px;
+    padding-left: 11px;
+    padding-right: 11px;
+  }
+  @media screen and (min-width: 1200px) {
+    height: 481px;
+    padding-bottom: 50px;
+    padding-left: 44px;
+    padding-right: 44px;
+  }
+}
+
+.products__content {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+  max-width: 280px;
+  height: 598px;
+
+  outline: 3px solid purple;
+
+  @media screen and (max-width: 767.99px) {
+    &:not(:last-child) {
+      margin-bottom: 17px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 220px;
+    height: 596px;
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 329px;
+    height: 735px;
+    margin-bottom: 0;
+  }
+}
+
+.products__card--iceCream {
+  background-color: $hero-bg-color;
+}
+.products__card--iceCoffee {
+  background-color: $ice-coffee-color;
+}
+.products__card--milkShakes {
+  background-color: $milkshake-color;
+}
+
+.products-img--iceCream::before {
+  position: absolute;
+  top: -57%;
+  left: 0;
+  content: '';
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 249px 252px;
+  background-image: url(../images/products-iceCream-480@1x.png);
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/products-iceCream-480@1x.png);
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 220px;
+    height: 224px;
+    top: -35%;
+    left: 0;
+    background-image: url(../images/products-iceCream-768@1x.png);
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/products-iceCream-768@1x.png);
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 335px;
+    height: 335px;
+    top: -55%;
+    left: 0;
+    background-image: url(../images/products-iceCream-1200@1x.png);
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/products-iceCream-1200@1x.png);
+    }
+  }
+}
+
+.products-img--iceCoffee::before {
+  position: absolute;
+  top: -57%;
+  left: 0;
+  content: '';
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 249px 252px;
+  background-image: url(../images/products-iceCoffee-480@1x.png);
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/products-iceCoffee-480@1x.png);
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 220px;
+    height: 224px;
+    top: -30%;
+    left: 0;
+    background-image: url(../images/products-iceCoffee-768@1x.png);
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/products-iceCoffee-768@1x.png);
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 335px;
+    height: 335px;
+    top: -50%;
+    left: 0;
+    background-image: url(../images/products-iceCoffee-1200@1x.png);
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/products-iceCoffee-1200@1x.png);
+    }
+  }
+}
+
+.products-img--milkShakes::before {
+  position: absolute;
+  top: -57%;
+  left: 0;
+  content: '';
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 249px 252px;
+  background-image: url(../images/products-milkShakes-480@1x.png);
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/products-milkShakes-480@2x.png);
+  }
+
+  @media screen and (min-width: 768px) {
+    background-size: 220px 224px;
+    // width: 220px;
+    // height: 224px;
+    top: -70%;
+    left: 0;
+    background-image: url(../images/products-milkShakes-768@1x.png);
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/products-milkShakes-768@2x.png);
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-size: 335px 335px;
+    top: -50%;
+    left: 0;
+    background-image: url(../images/products-milkShakes-1200@1x.png);
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/products-milkShakes-1200@2x.png);
+    }
+  }
+}
+
+.products__name {
+  font-family: $fontTitan;
+  color: $main-color;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  @include fontStyle(400, 20, 23, 4);
+
+  @media screen and (min-width: 1200px) {
+    @include fontStyle(400, 30, 34, 4);
+  }
+}
+
+.pseudo-three-dots {
+  width: 26px;
+  height: 6%;
+  padding: 0;
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+  fill: $main-color;
+}
+
+.products__text {
+  display: inline-block;
+  //   margin-top: 30px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+
+  text-align: center;
+  font-family: $fontDM;
+  color: $main-color;
+
+  @include fontStyle(700, 14, 21, 4);
+
+  @media screen and (min-width: 768px) {
+    @include fontStyle(700, 14, 25, 4);
+    max-height: 120px;
+    overflow: hidden;
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include fontStyle(700, 16, 28, 4);
+  }
+}
+
+.products__button {
+  position: relative;
+
+  margin-top: 30px;
+
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 0;
+  background-color: $main-color;
+}
+
+.products__icon {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15px;
+  height: 15px;
+
+  fill: $accent-color;
+}
