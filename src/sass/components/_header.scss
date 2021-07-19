@@ -4,23 +4,85 @@
 }
 
 .header__container {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 5;
   display: flex;
   align-items: center;
   padding-top: 6px;
   padding-bottom: 6px;
   background-color: $hero-bg-color;
   overflow-y: hidden;
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    padding-top: 37px;
+    padding-left: 34px;
+    padding-right: 34px;
+    margin-bottom: 11px;
+  }
+  @media screen and (min-width: 1280px) {
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    padding-left: 46px;
+    padding-right: 46px;
+  }
+}
+
+.header__logo {
+  margin-right: 110px;
 }
 
 .nav {
   display: none;
+  @media screen and (min-width: 1280px) {
+    display: block;
+    margin-right: 110px;
+  }
+}
+
+.nav_list {
+  display: flex;
+}
+
+.nav__item:not(:last-child) {
+  margin-right: 35px;
+}
+
+.nav__link {
+  @include fontStyle(700, 16, 21, 4);
+  padding-top: 14px;
+  padding-bottom: 14px;
+  color: $main-color;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+  &--current {
+    color: $accent-color;
+  }
 }
 
 .header__button {
   display: none;
+  @media screen and (min-width: 768px) {
+    @include fontStyle(700, 16, 21, 4);
+    display: inline-flex;
+    align-items: center;
+    padding: 13px 37px;
+    margin-left: 30px;
+    border-radius: 22px;
+    background-color: $main-color;
+    color: $accent-color;
+    &:hover,
+    &:focus {
+      background-color: $button-hover-color;
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    margin-left: auto;
+  }
+}
+
+.header__button-icon {
+  margin-left: 12px;
+  fill: currentColor;
 }
