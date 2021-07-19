@@ -1,29 +1,43 @@
-.section-gallery__img {
-  background-image: url(/images/gallery-photo-480@1x.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  @media screen and (min-divice-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    background-image: url(/images/gallery-photo-480@2x.jpg);
-  }
+.gallery {
+  background: linear-gradient(to bottom, #fff5f6 48%, #ffffff 48%);
+  padding-top: 97px;
+  padding-bottom: 80px;
   @media screen and (min-width: 768px) {
-    .section-gallery__img {
-      background-image: url(/images/gallery-photo-768@1x.jpg);
-    }
-  }
-  @media screen and (min-divice-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    .section-gallery__img {
-      background-image: url(/images/gallery-photo-768@2x.jpg);
-    }
+    padding-top: 140px;
+    padding-bottom: 121px;
   }
   @media screen and (min-width: 1280px) {
-    .section-gallery__img {
-      background-image: url(/images/gallery-photo-1200@1x.jpg);
+    padding-top: 139px;
+    padding-bottom: 123px;
+  }
+}
+
+.gallery__container {
+  // overflow-x: hidden;
+  max-width: 1280px;
+  height: 430px;
+  background-image: url('/images/gallery-photo-1200@1x.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url('/images/gallery-photo-1200@2x.jpg');
+  }
+  @media screen and (max-width: 767px) {
+    background-image: url('/images/gallery-photo-480@1x.jpg');
+    max-width: 364px;
+    height: 122px;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('/images/gallery-photo-480@2x.jpg');
     }
   }
-  @media screen and (min-divice-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    .section-gallery__img {
-      background-image: url(/images/gallery-photo-1200@2x.jpg);
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    max-width: 786px;
+    height: 264px;
+    background-image: url('/images/gallery-photo-768@1x.jpg');
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('/images/gallery-photo-768@2x.jpg');
     }
   }
 }
