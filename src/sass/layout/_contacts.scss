@@ -1,22 +1,42 @@
 .contacts {
   background: linear-gradient(to bottom, $main-color 84px, $light-bg-color 84px);
+  @media screen and (min-width: 768px) {
+    padding-top: 119px;
+    background: linear-gradient(to bottom, $main-color 197px, $light-bg-color 197px);
+  }
 }
 
 .card {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }
 
 .card__item {
+  margin-left: auto;
+  margin-right: auto;
   padding: 43px 21px 43px 20px;
   width: 220px;
   height: auto;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
+  font-weight: 500;
   background-color: $main-color;
   &:not(:last-child) {
-    margin-bottom: 20px;
+    @media screen and (max-width: 767px) {
+      margin-bottom: 20px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 3 * 20px) / 3);
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 50px 31px 50px 21px;
+    font-size: 14px;
+    line-height: 1.875em;
   }
 }
 
@@ -24,19 +44,24 @@
   display: flex;
   align-items: center;
   margin-bottom: 25px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+  }
 }
 
 .card__representations {
   border-radius: 4px;
   text-align: center;
   padding: 0 27px;
-  font-weight: 500;
   line-height: 1.833em;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-
   color: $main-color;
   background-color: $ice-coffee-color;
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+  }
 }
 
 .card__representations--color {
@@ -44,17 +69,21 @@
 }
 
 .card__city {
-  font-weight: 500;
-  line-height: 1.833;
+  line-height: 1.833em;
   letter-spacing: 0.04em;
   margin-bottom: 10px;
   color: $main-text-color;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 14px;
+  }
 }
 
 .card__text {
-  font-weight: 500;
   line-height: 1.5em;
   color: $light-text-color;
+  @media screen and (min-width: 768px) {
+    line-height: 1.642em;
+  }
 }
 
 .card-period::before,
@@ -63,15 +92,19 @@
   content: '';
   display: block;
   border: 1px solid $pseudo-color;
-}
-
-.card-period__item:not(:last-child) {
-  padding-bottom: 10px;
+  @media screen and (min-width: 768px) {
+    margin: 30px 0;
+  }
 }
 
 .card-period__item {
-  font-weight: 500;
   line-height: 1.833;
+  &:not(:last-child) {
+    padding-bottom: 10px;
+    @media screen and (min-width: 768px) {
+      padding-bottom: 16px;
+    }
+  }
 }
 
 .card-period__time {
@@ -79,7 +112,6 @@
 }
 
 .card-address__link {
-  font-weight: 500;
   line-height: 1.5em;
   color: $light-text-color;
 }
@@ -92,6 +124,20 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 81px;
+    flex-direction: row;
+  }
+}
+
+.card-button__item:not(:last-child) {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 10px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-right: 14px;
+  }
 }
 
 .card-button__button {
@@ -105,10 +151,11 @@
   line-height: 1.312;
   border-radius: 22px;
   border: transparent;
+  cursor: pointer;
   color: $main-color;
   background-color: $slider-accent-color;
-  &:not(:last-child) {
-    margin-bottom: 10px;
+  @media screen and (min-width: 768px) {
+    padding: 12px 27px;
   }
 }
 
@@ -126,5 +173,8 @@
   &:hover,
   &:focus {
     background-color: $button-hover-color;
+  }
+  @media screen and (min-width: 768px) {
+    padding: 12px 37px;
   }
 }
