@@ -1,4 +1,6 @@
 .about {
+  padding-top: 125px;
+  padding-bottom: 39px;
   background-color: $light-bg-color;
   background-image: url(/images/about-bg-milk-480@1x.png);
   background-repeat: no-repeat;
@@ -23,16 +25,6 @@
     padding-top: 125px;
     padding-bottom: 39px;
   }
-}
-
-.about__section {
-  padding-top: 125px;
-  padding-bottom: 39px;
-
-  // @media screen and (min-width: 768px) {
-  // }
-  // @media screen and (min-width: 1280px) {
-  // }
 }
 
 .about__preTitle {
@@ -154,11 +146,3 @@
     margin-top: 55px;
   }
 }
-// // Леша
-// .about__container {
-//   width: 100%;
-//   margin-right: auto;
-//   margin-left: auto;
-//   padding-left: 20px;
-//   padding-right: 20px;
-// }
