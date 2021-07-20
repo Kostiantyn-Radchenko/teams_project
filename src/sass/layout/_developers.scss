@@ -1,0 +1,102 @@
+.dev {
+  position: absolute;
+  width: 300px;
+  max-height: 100%;
+
+  background-color: $team-bgc-color;
+
+  border-radius: 6px;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (min-width: 768px) {
+    width: 350px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 428px;
+  }
+  padding: 15px;
+}
+
+.backdrop--is-hidden .dev {
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+.dev__close-button {
+  position: absolute;
+  right: -15px;
+  top: -15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 30px;
+  height: 30px;
+
+  stroke: $main-text-color;
+  background-color: $modal-input-color;
+  border: none;
+  border-radius: 50px;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}
+
+.dev__title {
+  font-family: $fontTitan;
+  @include fontStyle(400, 22, 38.93, 6);
+  color: $accent-color;
+  text-align: center;
+  text-transform: uppercase;
+
+  margin-bottom: 26px;
+  @media screen and(min-width:768px) {
+    @include fontStyle(400, 24, 54.96, 4);
+  }
+  @media screen and(min-width:1280px) {
+    @include fontStyle(400, 26, 66.41, 6);
+  }
+}
+
+.dev__teamList {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.dev__team:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.dev__work {
+  font-family: $fontDM;
+  @include fontStyle(500, 14, 19.44, 2);
+  color: $main-text-color;
+  @media screen and(min-width:768px) {
+    @include fontStyle(500, 16, 24.64, 2);
+  }
+  @media screen and(min-width:1280px) {
+    @include fontStyle(500, 18, 28.16, 4);
+  }
+}
+
+.dev__name {
+  font-family: $fontDM;
+  @include fontStyle(700, 15, 19.44, 4);
+  color: $main-text-color;
+  @media screen and(min-width:768px) {
+    @include fontStyle(700, 17, 24.64, 4);
+  }
+  @media screen and(min-width:1280px) {
+    @include fontStyle(700, 19, 28.16, 4);
+  }
+}
