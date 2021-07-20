@@ -78,6 +78,18 @@
   </div>
   <section id="hero" class="hero">
     <div class="hero__container container">
+      <div class="hero__wrap-picture">
+        <div class="hero__eclipse"></div>
+        <picture class="hero__icecream">
+          <source srcset="images/header-icecream-1200@1x.png 1x, images/header-icecream-1200@2x.png 2x"
+            media="(min-width: 1280px)" />
+          <source srcset="images/header-icecream-768@1x.png 1x, images/header-icecream-768@2x.png 2x"
+            media="(min-width: 768px)" />
+          <source srcset="images/header-icecream-480@1x.png 1x, images/header-icecream-480@2x.png 2x"
+            media="(min-width: 320px)" />
+          <img class="hero__image-icecream" src="images/header-icecream-480@1x.png" alt="icecream" />
+        </picture>
+      </div>
       <picture class="hero__picture">
         <source
           srcset="images/header-milk-1200@1x.png 1x, images/header-milk-1200@2x.png 2x"
@@ -126,18 +138,6 @@
         <h1 class="hero__title">
           ice cream made with <span class="hero__title-span">passion</span>
         </h1>
-        <div class="hero__wrap-picture">
-            <div class="hero__eclipse"></div>
-            <picture class="hero__icecream">
-              <source srcset="images/header-icecream-1200@1x.png 1x, images/header-icecream-1200@2x.png 2x"
-                media="(min-width: 1280px)" />
-              <source srcset="images/header-icecream-768@1x.png 1x, images/header-icecream-768@2x.png 2x"
-                media="(min-width: 768px)" />
-              <source srcset="images/header-icecream-480@1x.png 1x, images/header-icecream-480@2x.png 2x"
-                media="(min-width: 320px)" />
-              <img class="hero__image-icecream" src="images/header-icecream-480@1x.png" alt="icecream" />
-            </picture>
-        </div>
         <ul class="hero__chain-list">
           <li class="hero__chain-item">
             <p class="hero__chain-text"><span class="hero__chain-span">16</span>cafes</p>
