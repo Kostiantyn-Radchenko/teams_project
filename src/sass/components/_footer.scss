@@ -92,8 +92,10 @@ footer {
 }
 
 .footer-signature {
+  position: relative;
   display: flex;
   justify-content: center;
+  align-items: center;
   text-align: center;
   padding-top: 22px;
   padding-bottom: 25px;
@@ -104,5 +106,22 @@ footer {
     @media screen and (min-width: 768px) {
       width: 276px;
     }
+  }
+}
+
+// Шестерня
+.config {
+  padding-right: 5px;
+  position: absolute;
+  z-index: 3;
+  top: 20%;
+  right:10% ;
+  fill: rgba(0, 0, 0, 0.5);
+  border: none;
+  background-color: $config-bgc-color;
+
+  @media screen and (min-width:768px) {
+    top: 10%;
+  right:10% ;
   }
 }
