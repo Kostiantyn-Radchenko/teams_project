@@ -1,20 +1,4 @@
 <header class="header">
-  <div class="header__eclipse"></div>
-  <picture class="header__picture">
-    <source
-      srcset="images/header-icecream-1200@1x.png 1x, images/header-icecream-1200@2x.png 2x"
-      media="(min-width: 1280px)"
-    />
-    <source
-      srcset="images/header-icecream-768@1x.png 1x, images/header-icecream-768@2x.png 2x"
-      media="(min-width: 768px)"
-    />
-    <source
-      srcset="images/header-icecream-480@1x.png 1x, images/header-icecream-480@2x.png 2x"
-      media="(min-width: 320px)"
-    />
-    <img class="header__image-icecream" src="images/header-icecream-480@1x.png" alt="icecream" />
-  </picture>
   <div class="header__container container">
     <a href="#" class="header__logo">
       <img
@@ -55,7 +39,7 @@
     </button>
   </div>
   <div data-menu class="mob-menu is-hidden">
-    <div class="container mob-menu__container">
+    <div class="mob-menu__container">
       <button data-menu-close type="button" class="mob-menu__close">
         <svg width="14" height="14" class="menu-icon">
           <use href="images/sprite.svg#icon-close"></use>
@@ -94,7 +78,7 @@
   </div>
   <section id="hero" class="hero">
     <div class="hero__container container">
-      <picture class="header__picture">
+      <picture class="hero__picture">
         <source
           srcset="images/header-milk-1200@1x.png 1x, images/header-milk-1200@2x.png 2x"
           media="(min-width: 1280px)"
@@ -103,9 +87,9 @@
           srcset="images/header-milk-768@1x.png 1x, images/header-milk-768@2x.png 2x"
           media="(min-width: 768px)"
         />
-        <img class="header__image-milk" src="images/header-milk-768@1x.png" alt="milk" />
+        <img class="hero__image-milk" src="images/header-milk-768@1x.png" alt="milk" />
       </picture>
-      <picture class="header__picture">
+      <picture class="hero__picture">
         <source
           srcset="images/header-girl-1200@1x.png 1x, images/header-girl-1200@2x.png 2x"
           media="(min-width: 1280px)"
@@ -114,9 +98,9 @@
           srcset="images/header-girl-768@1x.png 1x, images/header-girl-768@2x.png 2x"
           media="(min-width: 768px)"
         />
-        <img class="header__image-girl" src="images/header-girl-768@1x.png" alt="girl" />
+        <img class="hero__image-girl" src="images/header-girl-768@1x.png" alt="girl" />
       </picture>
-      <picture class="header__picture">
+      <picture class="hero__picture">
         <source
           srcset="images/header-dot-1200@1x.png 1x, images/header-dot-1200@2x.png 2x"
           media="(min-width: 1280px)"
@@ -125,9 +109,9 @@
           srcset="images/header-dot-768@1x.png 1x, images/header-dot-768@2x.png 2x"
           media="(min-width: 768px)"
         />
-        <img class="header__image-first-dot" src="images/header-dot-768@1x.png" alt="list-mark" />
+        <img class="hero__image-first-dot" src="images/header-dot-768@1x.png" alt="list-mark" />
       </picture>
-      <picture class="header__picture">
+      <picture class="hero__picture">
         <source
           srcset="images/header-dot-1200@1x.png 1x, images/header-dot-1200@2x.png 2x"
           media="(min-width: 1280px)"
@@ -136,12 +120,24 @@
           srcset="images/header-dot-768@1x.png 1x, images/header-dot-768@2x.png 2x"
           media="(min-width: 768px)"
         />
-        <img class="header__image-second-dot" src="images/header-dot-768@1x.png" alt="list-mark" />
+        <img class="hero__image-second-dot" src="images/header-dot-768@1x.png" alt="list-mark" />
       </picture>
       <div class="hero__wrap">
         <h1 class="hero__title">
           ice cream made with <span class="hero__title-span">passion</span>
         </h1>
+        <div class="hero__wrap-picture">
+            <div class="hero__eclipse"></div>
+            <picture class="hero__icecream">
+              <source srcset="images/header-icecream-1200@1x.png 1x, images/header-icecream-1200@2x.png 2x"
+                media="(min-width: 1280px)" />
+              <source srcset="images/header-icecream-768@1x.png 1x, images/header-icecream-768@2x.png 2x"
+                media="(min-width: 768px)" />
+              <source srcset="images/header-icecream-480@1x.png 1x, images/header-icecream-480@2x.png 2x"
+                media="(min-width: 320px)" />
+              <img class="hero__image-icecream" src="images/header-icecream-480@1x.png" alt="icecream" />
+            </picture>
+        </div>
         <ul class="hero__chain-list">
           <li class="hero__chain-item">
             <p class="hero__chain-text"><span class="hero__chain-span">16</span>cafes</p>

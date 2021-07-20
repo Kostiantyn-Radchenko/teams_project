@@ -2,131 +2,37 @@
   position: relative;
   background-color: $hero-bg-color;
   overflow-x: hidden;
-}
-
-.header__eclipse {
-  position: absolute;
-  bottom: 75px;
-  right: -62px;
-  background-color: $pre-title-color;
-  width: 346px;
-  height: 344px;
-  border-radius: 50%;
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
-    top: 37px;
-    right: 142px;
-    width: 324px;
-    height: 322px;
-  }
-  @media screen and (min-width: 1280px) {
-    top: 50px;
-    right: 265px;
-    width: 538px;
-    height: 538px;
-  }
-}
-
-.header__image-icecream {
-  position: absolute;
-  bottom: 0;
-  right: 32px;
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
-    right: 247px;
-  }
-  @media screen and (min-width: 1280px) {
-    right: 450px;
-  }
-}
-
-.header__image-milk {
-  display: none;
+  padding-top: 6px;
   @media screen and (min-width: 768px) {
-    display: block;
-    position: absolute;
-    left: 34px;
-    bottom: 28px;
-  }
-  @media screen and (min-width: 1280px) {
-    left: 77px;
-    bottom: 45px;
-  }
-}
-
-.header__image-girl {
-  display: none;
-  @media screen and (min-width: 768px) {
-    display: block;
-    position: absolute;
-    right: 34px;
-    bottom: 0;
-  }
-  @media screen and (min-width: 1280px) {
-    right: 109px;
-    bottom: 0;
-  }
-}
-
-.header__image-first-dot {
-  display: none;
-  @media screen and (min-width: 768px) {
-    display: block;
-    position: absolute;
-    top: 14px;
-    right: 34px;
-  }
-  @media screen and (min-width: 1280px) {
-    top: 10px;
-    right: 107px;
-  }
-}
-
-.header__image-second-dot {
-  display: none;
-  @media screen and (min-width: 768px) {
-    display: block;
-    position: absolute;
-    top: 69px;
-    right: 34px;
-  }
-  @media screen and (min-width: 1280px) {
-    top: 94px;
-    right: 107px;
+    padding-top: 37px;
   }
 }
 
 .header__container {
   display: flex;
   align-items: center;
-  padding-top: 6px;
-  padding-bottom: 6px;
-  overflow-y: hidden;
   @media screen and (min-width: 768px) {
     position: relative;
-    padding-top: 37px;
-    padding-left: 34px;
-    padding-right: 34px;
+    z-index: 2;
   }
   @media screen and (min-width: 1280px) {
-    // position: fixed;
-    // width: 100vw;
-    // top: 0;
-    // left: 0;
-    // z-index: 5;
-    padding-left: 46px;
-    padding-right: 46px;
-    margin-bottom: 50px;
+    position: relative;
+    left: -34px;
+    width: 1120px;
   }
 }
 
 .header__logo {
-  margin-right: 110px;
+  @media screen and (min-width: 1280px) {
+    margin-right: 90px;
+  }
 }
 
 .nav {
   display: none;
   @media screen and (min-width: 1280px) {
     display: block;
-    margin-right: 110px;
+    margin-right: 90px;
   }
 }
 
