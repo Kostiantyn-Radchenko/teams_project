@@ -10,22 +10,21 @@
   @media screen and (min-width: 1280px) {
     padding-top: 132px;
     background: linear-gradient(to bottom, $main-color 234px, $light-bg-color 234px);
-
-    background-image: url('/images/contacts-bg-spots-1200@1x.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position-y: 68%;
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url('/images/contacts-bg-spots-1200@2x.png');
-    }
   }
 }
 
-// .contacts__container {
-//   @media screen and (min-width: 1280px) {
-
-//   }
-// }
+.contacts__container {
+  padding-left: 100px;
+  padding-right: 100px;
+  @media screen and (min-width: 1280px) {
+    background-image: url(/images/contacts-bg-spots-1200@1x.png);
+    background-repeat: no-repeat;
+    background-position-y: 234px;
+    // @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    //   background-image: url('/images/contacts-bg-spots-1200@2x.png');
+    // }
+  }
+}
 
 .card {
   @media screen and (min-width: 768px) {
