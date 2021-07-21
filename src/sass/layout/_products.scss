@@ -140,13 +140,35 @@
 .products__card {
   &--iceCream {
     background-color: $hero-bg-color;
+    border-radius: 24px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      box-shadow: 0px 0px 25px 0px $hero-bg-color;
+      transform: scale(1.05);
+    }
   }
 
   &--iceCoffee {
     background-color: $ice-coffee-color;
+    border-radius: 24px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      box-shadow: 0px 0px 25px 0px $ice-coffee-color;
+      transform: scale(1.05);
+    }
   }
+
   &--milkShakes {
     background-color: $milkshake-color;
+    border-radius: 24px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      box-shadow: 0px 0px 25px 0px $milkshake-color;
+      transform: scale(1.05);
+    }
   }
 }
 

@@ -73,6 +73,7 @@ footer {
   }
 
   &--link {
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     color: $accent-color;
 
     &:hover,
@@ -113,11 +114,19 @@ footer {
 .config {
   position: absolute;
   z-index: 3;
-  top: 31%;
-  right: 8%;
+
+  top: 20%;
+  right: 10%;
+
   fill: rgba(0, 0, 0, 0.5);
   border: none;
   background-color: $config-bgc-color;
+
+
+  @media screen and (min-width: 768px) {
+    top: 10%;
+    right: 10%;
+  }
 
   &:hover {
     animation-play-state: paused;
@@ -142,4 +151,5 @@ footer {
     top: 26%;
     right: 3%;
   }
+
 }
