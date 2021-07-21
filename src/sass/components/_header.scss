@@ -19,11 +19,13 @@
   @media screen and (min-width: 768px) {
     position: relative;
     z-index: 2;
+    padding-left: 34px;
+    padding-right: 34px;
   }
   @media screen and (min-width: 1280px) {
     position: relative;
-    left: -34px;
-    width: 1120px;
+    padding-left: 46px;
+    padding-right: 116px;
   }
 }
 
