@@ -332,20 +332,22 @@
   }
 }
 
-.products {
-  &__button {
-    position: relative;
+.products__button {
+  position: relative;
+  margin-top: 30px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 0;
+  background-color: $main-color;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    margin-top: 30px;
-
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    border: 0;
-    background-color: $main-color;
+  &:hover,
+  &:focus {
+    transform: rotate(90deg);
   }
 
-  &__icon {
+  .products__icon {
     position: absolute;
     bottom: 12px;
     left: 12px;
