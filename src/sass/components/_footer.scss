@@ -2,8 +2,7 @@ footer {
   background-color: $light-bg-color;
 }
 .footer-container {
-  padding-top: 113px;
-  padding-bottom: 43px;
+  padding: 113px 15px 43px 15px;
 
   @media screen and (min-width: 768px) {
     padding-top: 165px;
@@ -122,7 +121,6 @@ footer {
   border: none;
   background-color: $config-bgc-color;
 
-
   @media screen and (min-width: 768px) {
     top: 10%;
     right: 10%;
@@ -151,5 +149,4 @@ footer {
     top: 26%;
     right: 3%;
   }
-
 }
