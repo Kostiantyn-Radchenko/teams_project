@@ -30,7 +30,15 @@
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
   font-weight: 500;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: $main-color;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 0px 10px 0px $hero-bg-color;
+    transform: scale(1.05);
+  }
+
   &:not(:last-child) {
     @media screen and (max-width: 767px) {
       margin-bottom: 20px;
@@ -247,6 +255,7 @@
   padding: 12px 32px;
   background-color: $main-color;
   color: $slider-accent-color;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
     background-color: $button-hover-color;
