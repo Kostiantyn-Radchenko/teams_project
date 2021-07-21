@@ -96,6 +96,8 @@
   &:hover,
   &:focus {
     background-color: $button-hover-color;
+    animation-name: rotateX;
+    animation-duration: 1000ms;
   }
   @media screen and (min-width: 768px) {
     display: inline-flex;
@@ -126,6 +128,8 @@
   &:hover,
   &:focus {
     color: $accent-color;
+    animation-name: rotateY;
+    animation-duration: 1000ms;
   }
   &--current {
     color: $accent-color;

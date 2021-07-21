@@ -258,6 +258,8 @@
     &:hover,
     &:focus {
       background-color: $review-dots-color;
+      animation-name: rotateX;
+      animation-duration: 1000ms;
     }
   }
   &--white {
@@ -266,6 +268,8 @@
     &:hover,
     &:focus {
       background-color: $button-hover-color;
+      animation-name: rotateX;
+      animation-duration: 1000ms;
     }
   }
   @media screen and (min-width: 1280px) {
@@ -306,6 +310,12 @@
     border-radius: 50%;
     background-color: $main-color;
     color: $accent-color;
+    &:hover,
+    &:focus {
+      animation-name: rotateXArrow;
+      animation-duration: 1000ms;
+      // animation-iteration-count: infinite;
+    }
   }
   @media screen and (min-width: 1280px) {
     width: 26px;
