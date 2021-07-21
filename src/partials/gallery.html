@@ -1,3 +1,19 @@
 <section class="gallery section">
-  <div class="gallery__container container"></div>
+  <div class="container">
+    <picture>
+      <source
+        srcset="images/gallery-photo-1200@1x.jpg 1x, images/gallery-photo-1200@2x.jpg 2x"
+        media="(min-width:1200px)"
+      />
+      <source
+        srcset="images/gallery-photo-768@1x.jpg 1x, images/gallery-photo-768@2x.jpg 2x"
+        media="(min-width:768px)"
+      />
+      <source
+        srcset="images/gallery-photo-480@1x.jpg 1x, images/gallery-photo-480@2x.jpg 2x"
+        media="(min-width:480px)"
+      />
+      <img class="gallery__img" src="images/gallery-photo-480@1x.jpg" alt="Gallery" width="100%" />
+    </picture>
+  </div>
 </section>
