@@ -1,5 +1,4 @@
 .hero {
-  // position: relative;
   padding-top: 137px;
   @media screen and (min-width: 768px) {
     padding-top: 15px;
@@ -11,12 +10,14 @@
 
 .hero__container {
   position: relative;
-  // @media screen and (min-width: 768px) {
-  //   padding-bottom: 36px;
-  // }
-  // @media screen and (min-width: 1280px) {
-  //   padding-bottom: 52px;
-  // }
+  @media screen and (min-width: 768px) {
+    padding-left: 34px;
+    padding-right: 34px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-left: 115px;
+    padding-right: 115px;
+  }
 }
 
 .hero__image-milk {
@@ -24,12 +25,12 @@
   @media screen and (min-width: 768px) {
     display: block;
     position: absolute;
-    left: 0;
+    left: 34px;
     bottom: -7px;
   }
   @media screen and (min-width: 1280px) {
-    left: 0;
-    bottom: 45px;
+    left: 77px;
+    bottom: 0;
   }
 }
 
@@ -38,9 +39,13 @@
   @media screen and (min-width: 768px) {
     display: block;
     position: absolute;
-    right: 0;
+    right: 34px;
     bottom: -34px;
     z-index: 2;
+  }
+  @media screen and (min-width: 1280px) {
+    right: 109px;
+    bottom: -51px;
   }
 }
 
@@ -50,11 +55,11 @@
     display: block;
     position: absolute;
     top: -2px;
-    right: 0;
+    right: 34px;
   }
   @media screen and (min-width: 1280px) {
     top: -5px;
-    right: -7px;
+    right: 107px;
   }
 }
 
@@ -64,20 +69,17 @@
     display: block;
     position: absolute;
     top: 54px;
-    right: 0;
+    right: 34px;
   }
   @media screen and (min-width: 1280px) {
     top: 80px;
-    right: -7px;
+    right: 107px;
   }
 }
 
 .hero__wrap {
   position: relative;
   margin-bottom: 19px;
-  // @media screen and (max-width: 767px) {
-  //   height: 282px;
-  // }
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: space-between;
@@ -131,13 +133,13 @@
   height: 344px;
   @media screen and (min-width: 768px) {
     top: -61px;
-    right: 103px;
+    right: 137px;
     width: 324px;
     height: 322px;
   }
   @media screen and (min-width: 1280px) {
     top: -109px;
-    right: 173px;
+    right: 268px;
     width: 538px;
     height: 538px;
   }
