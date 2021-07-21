@@ -15,6 +15,22 @@
   }
 }
 
+.products__container {
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media screen and(min-width:768px) {
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-left: 115px;
+    padding-right: 115px;
+  }
+  
+}
+
 .products__heading {
   margin-bottom: 31px;
 
@@ -351,7 +367,7 @@
 
   @media screen and (min-width: 768px) {
     @include fontStyle(700, 14, 25, 4);
-    max-height: 118px;
+    max-height: 117px;
     overflow: hidden;
   }
 

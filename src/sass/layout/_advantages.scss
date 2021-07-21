@@ -4,13 +4,20 @@
   padding-bottom: 20px;
 }
 
-// .advantages__container{
-//     @media screen and (min-width: 480px) {
-//     //     display: flex;
-//     //     flex-wrap: wrap;
-//     //     justify-content: center;
-//     //   }
-// }
+.advantages__container {
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media screen and(min-width:768px) {
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-left: 115px;
+    padding-right: 115px;
+  }
+}
 
 .advantages__item::before {
   content: '';
