@@ -13,6 +13,22 @@
     padding-bottom: 39px;
   }
 }
+
+.about__container {
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media screen and(min-width:768px) {
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+
+  @media screen and(min-width:1280px) {
+    padding-left: 115px;
+    padding-right: 115px;
+  }
+}
+
 .about__section {
   background-image: url(/images/about-bg-milk-480@1x.png);
   background-repeat: no-repeat;
