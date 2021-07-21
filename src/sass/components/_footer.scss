@@ -112,17 +112,44 @@ footer {
 
 // Шестерня
 .config {
-  padding-right: 5px;
   position: absolute;
   z-index: 3;
+
   top: 20%;
   right: 10%;
+
   fill: rgba(0, 0, 0, 0.5);
   border: none;
   background-color: $config-bgc-color;
+
 
   @media screen and (min-width: 768px) {
     top: 10%;
     right: 10%;
   }
+
+  &:hover {
+    animation-play-state: paused;
+  }
+
+  animation-name: spin;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    top: 26%;
+    right: 3%;
+  }
+
 }
