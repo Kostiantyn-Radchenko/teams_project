@@ -2,6 +2,13 @@
   padding-top: 125px;
   padding-bottom: 39px;
   background-color: $light-bg-color;
+  background-image: url(/images/about-bg-milk-480@1x.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50% 89%;
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(/images/about-bg-milk-480@2x.png);
+  }
 
   @media screen and(min-width:768px) {
     background-image: none;
@@ -11,12 +18,19 @@
   @media screen and(min-width:1280px) {
     padding-top: 125px;
     padding-bottom: 39px;
+    background-image: url(/images/about-bg-milk-1200@1x.png);
+    background-repeat: no-repeat;
+    background-size: 1280px 534px;
+    background-position: 50% 109%;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(/images/about-bg-milk-1200@2x.png);
+    }
   }
 }
 
 .about__container {
-  padding-left: 20px;
-  padding-right: 20px;
+  // padding-left: 20px;
+  // padding-right: 20px;
 
   @media screen and(min-width:768px) {
     padding-left: 36px;
@@ -29,24 +43,6 @@
   }
 }
 
-.about__section {
-  background-image: url(/images/about-bg-milk-480@1x.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: 50% 87%;
-  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    background-image: url(/images/about-bg-milk-480@2x.png);
-  }
-  @media screen and(min-width:1280px) {
-    background-image: url(/images/about-bg-milk-1200@1x.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: 50% 100%;
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url(/images/about-bg-milk-1200@2x.png);
-    }
-  }
-}
 .about__preTitle {
   font-family: $fontTitan;
   @include fontStyle(400, 18, 20.61, 2);
@@ -97,7 +93,7 @@
   font-family: $fontDM;
   @include fontStyle(500, 12, 19.44, 2);
   color: $main-text-color;
-  margin-bottom: 47px;
+  margin-bottom: 35px;
   @media screen and(min-width:768px) {
     @include fontStyle(500, 14, 24.64, 2);
   }
@@ -112,7 +108,13 @@
 
 .about__text--margin {
   color: $light-text-color;
-  margin-bottom: 47px;
+  margin-bottom: 20px;
+  @media screen and(min-width:768px) {
+    margin-bottom: 62px;
+  }
+  @media screen and(min-width:1280px) {
+    margin-bottom: 45px;
+  }
 }
 
 .about__btn {
@@ -157,6 +159,9 @@
   }
 }
 .about__textContainer {
+  width: 220px;
+  margin-left: auto;
+  margin-right: auto;
   @media screen and(min-width:768px) {
     width: 340px;
     margin-left: 17px;
