@@ -29,7 +29,8 @@
   margin-right: auto;
 }
 .reviews-product {
-  display: block;
+  display: flex;
+  justify-content: center;
   // width: 100vw;
   position: relative;
   margin-right: 20px;
