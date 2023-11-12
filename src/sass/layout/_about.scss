@@ -43,7 +43,6 @@
   }
 }
 
-<<<<<<< HEAD
 .about__section {
   background-image: url(/images/about-bg-milk-480@1x.png);
   background-repeat: no-repeat;
@@ -62,8 +61,6 @@
     }
   }
 }
-=======
->>>>>>> 84c5bf1f413fbaa62aad2862c2f840d04c26f98a
 .about__preTitle {
   font-family: $fontTitan;
   @include fontStyle(400, 18, 20.61, 2);
@@ -114,13 +111,8 @@
   font-family: $fontDM;
   @include fontStyle(500, 12, 19.44, 2);
   color: $main-text-color;
-<<<<<<< HEAD
   margin-bottom: 47px;
   @media screen and (min-width: 768px) {
-=======
-  margin-bottom: 35px;
-  @media screen and(min-width:768px) {
->>>>>>> 84c5bf1f413fbaa62aad2862c2f840d04c26f98a
     @include fontStyle(500, 14, 24.64, 2);
   }
   @media screen and (min-width: 1280px) {
@@ -135,10 +127,10 @@
 .about__text--margin {
   color: $light-text-color;
   margin-bottom: 20px;
-  @media screen and(min-width:768px) {
+  @media screen and (min-width: 768px) {
     margin-bottom: 62px;
   }
-  @media screen and(min-width:1280px) {
+  @media screen and (min-width: 1280px) {
     margin-bottom: 45px;
   }
 }
@@ -185,21 +177,19 @@
   }
 }
 .about__textContainer {
-<<<<<<< HEAD
   @media screen and (min-width: 768px) {
-=======
-  width: 220px;
-  margin-left: auto;
-  margin-right: auto;
-  @media screen and(min-width:768px) {
->>>>>>> 84c5bf1f413fbaa62aad2862c2f840d04c26f98a
-    width: 340px;
-    margin-left: 17px;
-    margin-top: 50px;
-  }
-  @media screen and (min-width: 1280px) {
-    width: 463px;
-    margin-left: 74px;
-    margin-top: 55px;
+    width: 220px;
+    margin-left: auto;
+    margin-right: auto;
+    @media screen and (min-width: 768px) {
+      width: 340px;
+      margin-left: 17px;
+      margin-top: 50px;
+    }
+    @media screen and (min-width: 1280px) {
+      width: 463px;
+      margin-left: 74px;
+      margin-top: 55px;
+    }
   }
 }

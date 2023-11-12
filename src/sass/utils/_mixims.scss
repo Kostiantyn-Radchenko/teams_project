@@ -3,9 +3,9 @@ $fontTitan: 'Titan One', cursive;
 
 @mixin fontStyle($fontWeight, $fontSize, $liHeig, $letSpac) {
   font-weight: $fontWeight;
-  font-size: (#{$fontSize * 1px});
-  line-height: calc(#{$liHeig / $fontSize});
-  letter-spacing: (#{$letSpac * 0.01em});
+  font-size: #{$fontSize * 1px};
+  line-height: calc(#{$liHeig} / #{$fontSize});
+  letter-spacing: #{$letSpac * 0.01em};
 }
 
 // break point
